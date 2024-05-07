@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lemonadeo"
+        tools:targetApi="31">
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".mathMenu"
+            android:exported="false" />
+        <activity
+            android:name=".multiplication"
+            android:exported="false" />
+        <activity
+            android:name=".game"
+            android:exported="false" />
+        <activity
+            android:name=".forwardmanner"
+            android:exported="false" />
+        <activity
+            android:name=".difficulty"
+            android:exported="false" />
+        <activity
+            android:name=".backwardmanner"
+            android:exported="false" />
+        <activity
+            android:name=".under"
+            android:exported="false" />
+        <activity
+            android:name=".spellResult"
+            android:exported="false" />
+        <activity
+            android:name=".spelling"
+            android:exported="false" />
+        <activity
+            android:name=".similarPics"
+            android:exported="false" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onThePillow"
+            android:exported="false" />
+        <activity
+            android:name=".LeftNRight"
+            android:exported="false" />
+        <activity
+            android:name=".InFrontOf"
+            android:exported="false" />
+        <activity
+            android:name=".GoodJob"
+            android:exported="false" />
+        <activity
+            android:name=".Directions"
+            android:exported="false" />
+        <activity
+            android:name=".atTheBack"
+            android:exported="false" />
+        <activity
+            android:name=".DaysLearningHorizontal"
+            android:exported="false"
+            android:theme="@style/Theme.Lemonadeo" />
+        <activity
+            android:name=".MonthsLearningHorizontal"
+            android:exported="false" />
+        <activity
+            android:name=".SeasonsLearningHorizontal"
+            android:exported="false" />
+        <activity
+            android:name=".Ball"
+            android:exported="false" />
+        <activity
+            android:name=".Seasons"
+            android:exported="false" />
+        <activity
+            android:name=".SeasonsLearning"
+            android:exported="false" />
+        <activity
+            android:name=".SpellLearning"
+            android:exported="false" />
+        <activity
+            android:name=".MonthsLearning"
+            android:exported="false" />
+        <activity
+            android:name=".MonthLearning"
+            android:exported="false" />
+        <activity
+            android:name=".MathLearning"
+            android:exported="false" />
+        <activity
+            android:name=".DirectionLearning"
+            android:exported="false" />
+        <activity
+            android:name=".DigitalLearning"
+            android:exported="false" />
+        <activity
+            android:name=".DigitLearning"
+            android:exported="false" />
+        <activity
+            android:name=".DaysLearning"
+            android:exported="false" />
+        <activity
+            android:name=".ClockLearning"
+            android:exported="false" />
+        <activity
+            android:name=".Math"
+            android:exported="false" />
+        <activity
+            android:name=".Similar"
+            android:exported="false" />
+        <activity
+            android:name=".Direction"
+            android:exported="false" />
+        <activity
+            android:name=".Spell"
+            android:exported="false" />
+        <activity
+            android:name=".Digit"
+            android:exported="false" />
+        <activity
+            android:name=".Digital"
+            android:exported="false" />
+        <activity
+            android:name=".LearningMainMenu"
+            android:exported="false" />
+        <activity
+            android:name=".GameMainMenu"
+            android:exported="false" />
+        <activity
+            android:name=".Clock"
+            android:exported="false" />
+        <activity
+            android:name=".Days"
+            android:exported="false" />
+        <activity
+            android:name=".Months"
+            android:exported="false" />
+        <activity
+            android:name=".Season"
+            android:exported="false" />
+        <activity
+            android:name=".Log"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/answerEditText"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/numberTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:inputType="number"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitAnswerButton"
+        android:layout_width="253dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/answerEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Submit Your Answer"
+        android:fontFamily="@font/bebas_neue"
+        android:background="@drawable/submit"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitAnswerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="244dp"
+        android:textSize="18sp" />
+</RelativeLayout>

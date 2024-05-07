@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:textSize="26sp"
+        />
+
+    <EditText
+        android:id="@+id/answerEditText"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/numberTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:visibility="visible"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/submitAnswerButtonn"
+        android:layout_width="253dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/answerEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Submit Your Answer"
+        android:fontFamily="@font/bebas_neue"
+        android:backgroundTint="#FF009688"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitAnswerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="244dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

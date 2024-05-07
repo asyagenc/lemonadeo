@@ -1,0 +1,77 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".Ball">
+
+    <!-- Masa Resmi -->
+
+    <!-- Toolbar -->
+
+    <!-- Geri Dön Butonu -->
+
+    <!-- Top Resmi -->
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="293dp"
+        android:layout_height="408dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bilardomasa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarBall"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <!-- Rate Switch -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarBall"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="4dp"
+        android:background="#838383"
+        android:elevation="4dp"
+        android:fontFamily="@font/archivo_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Ball Game"
+        app:titleTextColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/backBttnBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF8BC34A"
+        android:fontFamily="@font/bebas_neue"
+        android:text="Game Menu"
+        android:textColorLink="#838383"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <ImageView
+        android:id="@+id/ballImageView"
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/topp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

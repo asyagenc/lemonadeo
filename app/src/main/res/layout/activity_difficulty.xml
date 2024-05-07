@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    android:padding="16dp">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/easyButton"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/easydigit"
+        android:fontFamily="@font/bebas_neue"
+        android:text="Easy"
+        android:textColor="#FFFFFFFF"
+        android:textSize="28sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mediumButton"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/mediumdigit"
+        android:fontFamily="@font/bebas_neue"
+        android:text="Medium"
+        android:textColor="#FFFFFFFF"
+        android:textSize="28sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hardButton"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/harddigit"
+        android:fontFamily="@font/bebas_neue"
+        android:text="Hard"
+        android:textColor="#FFFFFFFF"
+        android:textSize="28sp" />
+
+</RelativeLayout>
+
+
+
+

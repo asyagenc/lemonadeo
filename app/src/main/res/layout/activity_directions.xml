@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bttnToLR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    tools:context=".Directions">
+
+    <ImageView
+        android:id="@+id/Molly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="231dp"
+        android:layout_marginBottom="51dp"
+        android:contentDescription="@string/todo5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left" />
+
+    <TextView
+        android:id="@+id/myCats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="292dp"
+        android:gravity="center_horizontal"
+        android:text="@string/these_are_my_cats"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Molly" />
+
+    <ImageView
+        android:id="@+id/Daisy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/todo3"
+        app:layout_constraintBottom_toTopOf="@+id/myCats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Molly"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/right" />
+
+    <TextView
+        android:id="@+id/molly"
+        android:layout_width="45dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="211dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="172dp"
+        android:text="@string/molly"
+        app:layout_constraintBottom_toTopOf="@+id/myCats"
+        app:layout_constraintEnd_toStartOf="@+id/daisy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/daisy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="211dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/daisy"
+        app:layout_constraintBottom_toTopOf="@+id/Daisy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/molly"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="303dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/next"
+        android:fontFamily="@font/bebas_neue"
+        android:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myCats"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

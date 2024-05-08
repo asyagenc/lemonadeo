@@ -14,6 +14,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.media.MediaPlayer;
+import android.os.Handler;
 import android.view.Gravity;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -21,6 +22,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.Random;
 import java.lang.Math;
 
@@ -37,8 +40,9 @@ import java.util.List;
 
 public class spelling extends AppCompatActivity {
 
-    TextView wordTextView,correctSpellingTextView;
-    Button playButton,submitButton,nextButton;
+
+    TextView wordTextView,correctSpellingTextView,correct;
+    Button playButton,submitButton,nextButton,exitButton;
     LinearLayoutCompat letterLayout;
     List<String> words;
     List<Integer> imageResources;
@@ -70,11 +74,15 @@ public class spelling extends AppCompatActivity {
         imageView=findViewById(R.id.imageView12);
         correctSpellingTextView=findViewById(R.id.textView13);
         wordTxt=findViewById(R.id.textView12);
+        exitButton=findViewById(R.id.button14);
+        correct=findViewById(R.id.textView14);
 
 
         TextView correctSpellingTextView = findViewById(R.id.textView13);
         correctSpellingTextView.setVisibility(View.GONE);
         wordTxt.setVisibility(View.GONE);
+        correct.setVisibility(View.GONE);
+        submitButton.setVisibility(View.VISIBLE);
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -82,6 +90,7 @@ public class spelling extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
 
         initializeWords();
         displayWord();
@@ -91,9 +100,11 @@ public class spelling extends AppCompatActivity {
             if (actionId == EditorInfo.IME_ACTION_DONE || actionId == EditorInfo.IME_NULL) {
                 // Call the method to check spelling or perform any action
                 checkSpelling();
+
                 // Close the keyboard
                 InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+
                 return true;
             }
             return false;
@@ -106,9 +117,19 @@ public class spelling extends AppCompatActivity {
         submitButton.setOnClickListener(v -> checkSpelling());
         playButton.setOnClickListener(v -> playPronunciation());
 
+        exitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(spelling.this, MainActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
 
         displayWord();
     }
+
     private void initializeWords() {
 
         words = Arrays.asList(getResources().getStringArray(R.array.spelling_words));
@@ -212,13 +233,18 @@ public class spelling extends AppCompatActivity {
             correctSpellingTextView.setVisibility(View.GONE);
             wordTxt.setVisibility(View.GONE);
             nextButton.setEnabled(true);
+            correct.setText("Correct!");
+            correct.setVisibility(View.VISIBLE);
+            submitButton.setVisibility(View.GONE);
+
         } else {
             playIncorrectSound();
             correctSpellingTextView.setText("Correct Spelling:");
             wordTxt.setText(word);
-
+            correct.setVisibility(View.GONE);
             correctSpellingTextView.setVisibility(View.VISIBLE);
             wordTxt.setVisibility(View.VISIBLE);
+            submitButton.setVisibility(View.GONE);
         }
         nextButton.setEnabled(true);
     }
@@ -232,6 +258,7 @@ public class spelling extends AppCompatActivity {
             displayWord();
             correctSpellingTextView.setVisibility(View.GONE);
             wordTxt.setVisibility(View.GONE);
+            correct.setVisibility(View.GONE);
             nextButton.setEnabled(false);
         } else {
             Intent intent = new Intent(spelling.this, spellResult.class);

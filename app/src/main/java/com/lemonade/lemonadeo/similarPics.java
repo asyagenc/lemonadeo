@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +19,7 @@ import java.util.Random;
 public class similarPics extends AppCompatActivity {
 
     private ImageView mainImageView;
+    Button button;
     private ImageView similarImageView1;
     private ImageView similarImageView2;
     private ImageView correctImageView;
@@ -44,6 +47,7 @@ public class similarPics extends AppCompatActivity {
         mainImageView = findViewById(R.id.mainImageView);
         similarImageView1 = findViewById(R.id.similarImageView1);
         similarImageView2 = findViewById(R.id.similarImageView2);
+        button=findViewById(R.id.button13);
 
         similarImageView1.setOnClickListener(v -> {
             if (inGame) {
@@ -61,6 +65,13 @@ public class similarPics extends AppCompatActivity {
             } else {
                 // Navigate to ResultActivity when the game is not in progress
                 Intent intent = new Intent(similarPics.this, ResultActivity.class);
+                startActivity(intent);
+            }
+        });
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(similarPics.this, MainActivity.class);
                 startActivity(intent);
             }
         });

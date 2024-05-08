@@ -14,9 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lemonadeo"
         tools:targetApi="31">
-        <activity
-            android:name=".home"
-            android:exported="false" />
+
         <activity
             android:name=".mathMenu"
             android:exported="false" />
@@ -68,67 +66,34 @@
         <activity
             android:name=".atTheBack"
             android:exported="false" />
-        <activity
-            android:name=".DaysLearningHorizontal"
-            android:exported="false"
-            android:theme="@style/Theme.Lemonadeo" />
-        <activity
-            android:name=".MonthsLearningHorizontal"
-            android:exported="false" />
-        <activity
-            android:name=".SeasonsLearningHorizontal"
-            android:exported="false" />
+
         <activity
             android:name=".Ball"
             android:exported="false" />
-        <activity
-            android:name=".Seasons"
-            android:exported="false" />
+
         <activity
             android:name=".SeasonsLearning"
             android:exported="false" />
-        <activity
-            android:name=".SpellLearning"
-            android:exported="false" />
+
         <activity
             android:name=".MonthsLearning"
             android:exported="false" />
-        <activity
-            android:name=".MonthLearning"
-            android:exported="false" />
+
         <activity
             android:name=".MathLearning"
             android:exported="false" />
         <activity
             android:name=".DirectionLearning"
             android:exported="false" />
-        <activity
-            android:name=".DigitalLearning"
-            android:exported="false" />
-        <activity
-            android:name=".DigitLearning"
-            android:exported="false" />
+
         <activity
             android:name=".DaysLearning"
             android:exported="false" />
         <activity
             android:name=".ClockLearning"
             android:exported="false" />
-        <activity
-            android:name=".Math"
-            android:exported="false" />
-        <activity
-            android:name=".Similar"
-            android:exported="false" />
-        <activity
-            android:name=".Direction"
-            android:exported="false" />
-        <activity
-            android:name=".Spell"
-            android:exported="false" />
-        <activity
-            android:name=".Digit"
-            android:exported="false" />
+
+
         <activity
             android:name=".Digital"
             android:exported="false" />
@@ -147,9 +112,7 @@
         <activity
             android:name=".Months"
             android:exported="false" />
-        <activity
-            android:name=".Season"
-            android:exported="false" />
+
         <activity
             android:name=".Log"
             android:exported="true">

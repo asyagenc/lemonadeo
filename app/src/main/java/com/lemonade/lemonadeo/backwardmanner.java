@@ -4,6 +4,7 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.Gravity;
 import androidx.appcompat.app.AlertDialog;
@@ -15,6 +16,7 @@ public class backwardmanner extends AppCompatActivity {
     private TextView numberTextView, timerTextView, questionTextView, scoreTextView;
     private EditText answerEditText;
     private Button submitAnswerButton;
+    private ImageView imageView;
     private int total_score = 0;
     private int num;
     private int count = 0;
@@ -43,6 +45,7 @@ public class backwardmanner extends AppCompatActivity {
         scoreTextView = findViewById(R.id.scoreTextView);
         answerEditText = findViewById(R.id.answerEditText);
         submitAnswerButton = findViewById(R.id.submitAnswerButton);
+        imageView = findViewById(R.id.imageView);
 
         submitAnswerButton.setOnClickListener(v -> {
             int userAnswer = 0;
@@ -79,6 +82,7 @@ public class backwardmanner extends AppCompatActivity {
         answerEditText.setVisibility(View.GONE);
         submitAnswerButton.setVisibility(View.GONE);
         numberTextView.setVisibility(View.VISIBLE);
+        imageView.setVisibility(View.VISIBLE);
 
         new CountDownTimer(6000, 1000) {
             public void onTick(long millisUntilFinished) {

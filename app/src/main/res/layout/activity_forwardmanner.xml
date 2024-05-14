@@ -1,10 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFC107"
-    android:padding="16dp">
 
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFDBFFF5"
+        android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/ImageView"
+            android:layout_width="329dp"
+            android:layout_below="@id/questionTextView"
+            android:layout_above="@id/timerTextView"
+            android:layout_marginTop="30dp"
+            android:layout_height="268dp"
+            android:src="@drawable/tilki" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/crushed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/crushed"
+            android:layout_marginTop="90dp"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/numberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crushed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="290dp"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/answerEditText"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/numberTextView"
+            android:fontFamily="@font/crushed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/submitAnswerButton"
+            android:layout_width="253dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/answerEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FF009688"
+            android:fontFamily="@font/crushed"
+            android:text="Submit Your Answer"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submitAnswerButton"
+            android:fontFamily="@font/crushed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="244dp"
+            android:textSize="18sp" />
+    </RelativeLayout>

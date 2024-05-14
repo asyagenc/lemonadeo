@@ -2,8 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC107"
+    android:background="#FFDBFFF5"
     android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="329dp"
+        android:layout_height="400dp"
+        android:layout_above="@id/timerTextView"
+        android:layout_below="@id/questionTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="-25dp"
+        android:src="@drawable/tilki" />
 
     <TextView
         android:id="@+id/timerTextView"
@@ -11,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/crushed"
         android:layout_marginTop="200dp"
         android:textSize="36sp" />
 
@@ -20,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
+        android:fontFamily="@font/crushed"
         android:textAlignment="center"
         android:textSize="40sp" />
 
@@ -27,6 +42,7 @@
         android:id="@+id/numberTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/crushed"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="290dp"
         android:textSize="36sp" />
@@ -36,6 +52,7 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:layout_below="@id/numberTextView"
+        android:fontFamily="@font/crushed"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="300dp"
         android:inputType="number"
@@ -48,9 +65,9 @@
         android:layout_below="@id/answerEditText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Submit Your Answer"
-        android:fontFamily="@font/bebas_neue"
         android:background="@drawable/submit"
+        android:fontFamily="@font/crushed"
+        android:text="Submit Your Answer"
         android:visibility="gone" />
 
     <TextView
@@ -58,6 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/submitAnswerButton"
+        android:fontFamily="@font/crushed"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="244dp"
         android:textSize="18sp" />

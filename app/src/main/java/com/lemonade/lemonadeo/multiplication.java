@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,8 @@ public class multiplication extends AppCompatActivity {
     private TextView numberTextView,questionTextView,scoreTextView,resultTextView;
     private EditText answerEditText;
     private Button submitAnswerButton;
+
+    private ImageView imageView;
     private int total_score = 0;
     private int num1,num2;
     private int count = 0;
@@ -45,8 +48,9 @@ public class multiplication extends AppCompatActivity {
         questionTextView = findViewById(R.id.questionTextView);
         scoreTextView = findViewById(R.id.scoreTextView);
         answerEditText = findViewById(R.id.answerEditText);
-        submitAnswerButton = findViewById(R.id.submitAnswerButtonn);
+        submitAnswerButton = findViewById(R.id.submitAnswerButton);
         resultTextView = findViewById(R.id.resultTextView);
+        imageView = findViewById(R.id.imageView);
 
         submitAnswerButton.setOnClickListener(v -> {
             int answer = 0;
@@ -70,6 +74,7 @@ public class multiplication extends AppCompatActivity {
             scoreTextView.setText("Game Over! Your score is: " + total_score + "/10");
             answerEditText.setText("");
             answerEditText.setVisibility(View.GONE);
+            imageView.setVisibility(View.GONE);
             submitAnswerButton.setVisibility(View.GONE);
             numberTextView.setVisibility(View.GONE);
             if(total_score < 3 && total_score >= 0){

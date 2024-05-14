@@ -35,12 +35,6 @@ public class MonthsLearning extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_months_learning);
-
-        Toolbar toolbar = findViewById(R.id.toolbarMonthLearning);
-        setSupportActionBar(toolbar);
-
-        backMonthsLearning=findViewById(R.id.backBttnMonthsLearning);
-        monthsLearningVideo=findViewById(R.id.monthsLearningVideo);
         mediaController = new MediaController(this);
 
         backMonthsLearning.setOnClickListener(new View.OnClickListener() {

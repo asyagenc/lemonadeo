@@ -23,6 +23,9 @@
             android:name=".mathMenu"
             android:exported="false" />
         <activity
+            android:name=".learnDays"
+            android:exported="false" />
+        <activity
             android:name=".multiplication"
             android:exported="false" />
         <activity

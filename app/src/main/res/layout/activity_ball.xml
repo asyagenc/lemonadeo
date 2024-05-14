@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC107"
+    android:background="#FFDBFFF5"
     tools:context=".Ball">
 
     <!-- Masa Resmi -->
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FF8BC34A"
         android:fontFamily="@font/bebas_neue"
-        android:text="Game Menu"
+        android:text="@string/game_menu"
         android:textColorLink="#838383"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -34,8 +34,6 @@ public class DaysLearning extends AppCompatActivity {
         backDaysLearning=findViewById(R.id.backBttnDaysLearning);
         daysLearningVideo=findViewById(R.id.daysLearningVideo);
         mediaController = new MediaController(this);
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Toolbar toolbar = findViewById(R.id.toolbarDaysLearning);
-        setSupportActionBar(toolbar);
 
 
         backDaysLearning.setOnClickListener(new View.OnClickListener() {

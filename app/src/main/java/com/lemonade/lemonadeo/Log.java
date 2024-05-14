@@ -31,7 +31,7 @@ public class Log extends AppCompatActivity {
     Button logBttn;
     FirebaseAuth mAuth;
     Button RegPageBttn;
-    ProgressBar bar;
+
 
     @Override
     public void onStart() {
@@ -57,7 +57,7 @@ public class Log extends AppCompatActivity {
         AppCompatEditText editTextPassword=findViewById(R.id.LogPasswordd);
         logBttn=findViewById(R.id.LogPageBttn);
         RegPageBttn=findViewById(R.id.LogPageRegBttn);
-        bar=findViewById(R.id.progressBar);
+
 
         RegPageBttn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,17 +72,17 @@ public class Log extends AppCompatActivity {
         logBttn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bar.setVisibility(View.VISIBLE);
+
                 String email,password;
                 email=editTextEmail.getText().toString();
                 password=editTextPassword.getText().toString();
 
                 if(TextUtils.isEmpty(email)){
-                    Toast.makeText(Log.this,"enter an valid email.",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Log.this,"Enter a valid email.",Toast.LENGTH_SHORT).show();
                     return;}
 
                 if(TextUtils.isEmpty(password)){
-                    Toast.makeText(Log.this,"you have to enter your password.",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Log.this,"You have to enter your password.",Toast.LENGTH_SHORT).show();
                     return;}
 
                 mAuth.signInWithEmailAndPassword(email, password)
@@ -90,10 +90,10 @@ public class Log extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
 
-                                bar.setVisibility(View.GONE);
+
 
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(Log.this, "Login succesfull.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Log.this, "Login successful.", Toast.LENGTH_SHORT).show();
                                     Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                                     startActivity(intent);
                                     finish();
@@ -112,10 +112,6 @@ public class Log extends AppCompatActivity {
         });
 
 
-        /*ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.progressBar), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });*/
+
     }
 }

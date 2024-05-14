@@ -5,121 +5,107 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC107"
+    android:background="#FFDBFFF5"
     tools:context=".Days">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarDays"
-        android:layout_width="0dp"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginTop="4dp"
-        android:background="#838383"
-        android:elevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="Days Game"
-        app:titleTextColor="@android:color/white" />
-
     <Button
         android:id="@+id/dayBttn1"
-        android:layout_width="0dp"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
-        android:text="Monday"
+        android:text="@string/monday__"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.116" />
+        app:layout_constraintVertical_bias="0.623" />
 
     <Button
         android:id="@+id/dayBttn2"
-        android:layout_width="0dp"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
-        android:text="Tuesday"
+        android:text="@string/tuesday__"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222" />
-
-    <Button
-        android:id="@+id/dayBttn3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
-        android:fontFamily="@font/bebas_neue"
-        android:text="Wednesday"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
-
-    <Button
-        android:id="@+id/dayBttn4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
-        android:fontFamily="@font/bebas_neue"
-        android:text="Thursday"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527" />
-
-    <Button
-        android:id="@+id/dayBttn5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
-        android:fontFamily="@font/bebas_neue"
-        android:text="Friday"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43" />
-
-    <Button
-        android:id="@+id/dayBttn6"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
-        android:fontFamily="@font/bebas_neue"
-        android:text="Saturday"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.621" />
 
     <Button
-        android:id="@+id/dayBttn7"
-        android:layout_width="0dp"
+        android:id="@+id/dayBttn3"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
-        android:text="Sunday"
+        android:text="@string/wednesday__"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.715" />
+        app:layout_constraintVertical_bias="0.543" />
+
+    <Button
+        android:id="@+id/dayBttn4"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/bebas_neue"
+        android:text="@string/thursday__"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <Button
+        android:id="@+id/dayBttn5"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/bebas_neue"
+        android:text="@string/friday__"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <Button
+        android:id="@+id/dayBttn6"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/bebas_neue"
+        android:text="@string/saturday__"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <Button
+        android:id="@+id/dayBttn7"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/bebas_neue"
+        android:text="@string/sunday__"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
 
     <Button
         android:id="@+id/shuffleBttn"
@@ -127,26 +113,13 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FF8BC34A"
         android:fontFamily="@font/bebas_neue"
-        android:text="Shuffle"
+        android:text="@string/shuffle__"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintHorizontal_bias="0.671"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.801" />
-
-    <TextView
-        android:id="@+id/txtVieww"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FF8BC34A"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
+        app:layout_constraintVertical_bias="0.872" />
 
     <Button
         android:id="@+id/backBttnDays"
@@ -154,13 +127,73 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FF8BC34A"
         android:fontFamily="@font/bebas_neue"
-        android:text="Gaming Menu"
+        android:text="@string/exit__"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803" />
+        app:layout_constraintVertical_bias="0.873" />
+
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="303dp"
+        android:layout_height="327dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/dayBttn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lemonadestandboyy" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/bebas_neue"
+        android:gravity="center"
+        android:text="@string/order_the_days_of_the_week_correct_and_get_the_lemonade"
+        android:textColor="#2A1A1A"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/limonata"
+        app:layout_constraintEnd_toEndOf="@+id/dayBttn5"
+        app:layout_constraintStart_toStartOf="@+id/dayBttn3"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/crushed"
+        android:text="@string/textview___"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/gif" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/textview____"
+        app:layout_constraintBottom_toTopOf="@+id/backBttnDays"
+        app:layout_constraintEnd_toEndOf="@+id/dayBttn7"
+        app:layout_constraintStart_toStartOf="@+id/dayBttn7" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF8BC34A"
-        android:text="Game Menu"
+        android:text="@string/game_menu___"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.178"
@@ -43,7 +43,7 @@
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#FF8BC34A"
         android:enabled="true"
-        android:text="Check"
+        android:text="@string/check__"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.817"
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#FF8BC34A"
-        android:text="New"
+        android:text="@string/new_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.544"
@@ -78,15 +78,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.198"
-        app:srcCompat="@drawable/digitaltemp" />
+        app:srcCompat="@drawable/digitaltemp"
+        android:contentDescription="@string/todoxx" />
 
-    <TextView
+    <EditText
         android:id="@+id/hour"
         android:layout_width="55dp"
         android:layout_height="43dp"
         android:inputType="text"
-        android:text="00"
-        android:textSize="40dp"
+        android:text="@string/_00__"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.396"
@@ -94,13 +95,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.287" />
 
-    <TextView
+    <EditText
         android:id="@+id/minute"
         android:layout_width="55dp"
         android:layout_height="43dp"
         android:inputType="text"
-        android:text="00"
-        android:textSize="40dp"
+        android:text="@string/_00a"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.598"
@@ -114,13 +115,14 @@
         android:layout_width="267dp"
         android:layout_height="53dp"
         android:ems="10"
-        android:hint="hour"
+        android:hint="@string/hourss"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551" />
+        app:layout_constraintVertical_bias="0.551"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

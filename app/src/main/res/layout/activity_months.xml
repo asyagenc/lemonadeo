@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC107"
+    android:background="#FFDBFFF5"
     tools:context=".Months">
 
 
@@ -23,34 +23,6 @@
         app:titleTextColor="@android:color/white" />
 
     <Button
-        android:id="@+id/monthBttn1"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
-        android:fontFamily="@font/bebas_neue"
-        android:text="January"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
-
-    <Button
-        android:id="@+id/monthBttn2"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
-        android:fontFamily="@font/bebas_neue"
-        android:text="February"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
-
-    <Button
         android:id="@+id/monthBttn3"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
@@ -62,35 +34,7 @@
         app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
-
-    <Button
-        android:id="@+id/monthBttn4"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
-        android:fontFamily="@font/bebas_neue"
-        android:text="April"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
-
-    <Button
-        android:id="@+id/monthBttn5"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
-        android:fontFamily="@font/bebas_neue"
-        android:text="May"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
+        app:layout_constraintVertical_bias="0.693" />
 
     <Button
         android:id="@+id/monthBttn6"
@@ -104,7 +48,7 @@
         app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+        app:layout_constraintVertical_bias="0.617" />
 
     <Button
         android:id="@+id/monthBttn7"
@@ -118,49 +62,7 @@
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238" />
-
-    <Button
-        android:id="@+id/monthBttn8"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
-        android:fontFamily="@font/bebas_neue"
-        android:text="August"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.392" />
-
-    <Button
-        android:id="@+id/monthBttn9"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
-        android:fontFamily="@font/bebas_neue"
-        android:text="September"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162" />
-
-    <Button
-        android:id="@+id/monthBttn10"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
-        android:fontFamily="@font/bebas_neue"
-        android:text="October"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintVertical_bias="0.615" />
 
     <Button
         android:id="@+id/monthBttn11"
@@ -174,8 +76,35 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162" />
+        app:layout_constraintVertical_bias="0.54" />
 
+    <Button
+        android:id="@+id/monthBttn10"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#838383"
+        android:fontFamily="@font/bebas_neue"
+        android:text="October"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <Button
+        android:id="@+id/monthBttn1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#838383"
+        android:fontFamily="@font/bebas_neue"
+        android:text="January"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
 
     <Button
         android:id="@+id/monthBttn12"
@@ -189,32 +118,78 @@
         app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162" />
+        app:layout_constraintVertical_bias="0.54" />
 
     <Button
-        android:id="@+id/shuffleBttn"
-        android:layout_width="wrap_content"
+        android:id="@+id/monthBttn9"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FF8BC34A"
+        android:backgroundTint="#838383"
         android:fontFamily="@font/bebas_neue"
-        android:text="Shuffle"
+        android:text="September"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
+        app:layout_constraintVertical_bias="0.54" />
 
-    <TextView
-        android:id="@+id/txtVieww"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/monthBttn5"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:backgroundTint="#838383"
+        android:fontFamily="@font/bebas_neue"
+        android:text="May"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <Button
+        android:id="@+id/monthBttn2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#838383"
+        android:fontFamily="@font/bebas_neue"
+        android:text="February"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <Button
+        android:id="@+id/monthBttn8"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#838383"
+        android:fontFamily="@font/bebas_neue"
+        android:text="August"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <Button
+        android:id="@+id/monthBttn4"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#838383"
+        android:fontFamily="@font/bebas_neue"
+        android:text="April"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
 
     <Button
         android:id="@+id/backBttnMonths"
@@ -225,9 +200,71 @@
         android:text="Game Menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintVertical_bias="0.873" />
+
+    <Button
+        android:id="@+id/shuffleBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF8BC34A"
+        android:fontFamily="@font/bebas_neue"
+        android:text="Shuffle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <TextView
+        android:id="@+id/txtVieww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/lemonadeGirlMonth"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.224"
+                app:srcCompat="@drawable/lemonadegirl" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 

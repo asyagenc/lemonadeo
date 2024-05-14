@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".under">
 
     <Button
@@ -36,11 +37,11 @@
         android:layout_width="193dp"
         android:layout_height="132dp"
         android:layout_marginTop="28dp"
+        android:contentDescription="@string/todo_o"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/under"
-        android:contentDescription="@string/todo_o" />
+        app:srcCompat="@drawable/under" />
 
     <TextView
         android:id="@+id/textView6"

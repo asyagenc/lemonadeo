@@ -27,7 +27,7 @@ public class LearningMainMenu extends AppCompatActivity {
 
 
         button=findViewById(R.id.homeBtn);
-        cardView=findViewById(R.id.clockCard);
+        cardView=findViewById(R.id.daysCardx);
         cardView2=findViewById(R.id.seasonCard);
         cardView3=findViewById(R.id.monthCard);
         cardView4=findViewById(R.id.daysCard);
@@ -74,7 +74,7 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),DaysLearning.class);
+                Intent intent=new Intent(getApplicationContext(),learnDays.class);
                 startActivity(intent);
                 finish();
 

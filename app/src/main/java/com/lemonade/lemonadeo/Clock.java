@@ -46,9 +46,6 @@ public class Clock extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clock);
-
-        Toolbar toolbar = findViewById(R.id.toolbarClock);
-        setSupportActionBar(toolbar);
         clockImageView = findViewById(R.id.clockImageView);
         hourTextView = findViewById(R.id.hourTextView);
         minuteTextView = findViewById(R.id.minuteTextView);

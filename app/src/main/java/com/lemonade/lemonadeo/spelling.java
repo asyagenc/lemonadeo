@@ -167,6 +167,7 @@ public class spelling extends AppCompatActivity {
 
 
     private void displayWord() {
+        submitButton.setVisibility(View.VISIBLE);
         List<String> mutableWords = new ArrayList<>(words); // Create a mutable copy of the words list
 
         if (!mutableWords.isEmpty()) {

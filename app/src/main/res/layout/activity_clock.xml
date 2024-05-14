@@ -5,22 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC107"
+    android:background="#FFDBFFF5"
     tools:context=".Clock">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarClock"
-        android:layout_width="0dp"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginTop="4dp"
-        android:background="#838383"
-        android:elevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="Clock Game"
-        app:titleTextColor="@android:color/white" />
 
 
     <Button
@@ -31,7 +17,7 @@
         android:backgroundTint="#FF8BC34A"
         android:enabled="false"
         android:fontFamily="@font/bebas_neue"
-        android:text="Check"
+        android:text="@string/check"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.888"
@@ -47,7 +33,7 @@
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#FF8BC34A"
         android:fontFamily="@font/bebas_neue"
-        android:text="New"
+        android:text="@string/newww"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.551"
@@ -61,7 +47,8 @@
         android:layout_width="145dp"
         android:layout_height="52dp"
         android:ems="10"
-        android:hint="hour"
+        android:gravity="center"
+        android:hint="@string/hour"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +62,8 @@
         android:layout_width="145dp"
         android:layout_height="52dp"
         android:ems="10"
-        android:hint="minute"
+        android:gravity="center"
+        android:hint="@string/minute"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,7 +76,7 @@
         android:id="@+id/minuteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="minute"
+        android:text="@string/minutee"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +89,7 @@
         android:id="@+id/hourTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hour"
+        android:text="@string/hourr"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,7 +104,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FF8BC34A"
         android:fontFamily="@font/bebas_neue"
-        android:text="Game Menu"
+        android:text="@string/game_menu_"
         android:textColorLink="#8BC34A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,12 +118,13 @@
         android:layout_width="334dp"
         android:layout_height="350dp"
         android:layout_marginEnd="36dp"
-        android:scaleType="centerCrop"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.242"
-        app:srcCompat="@drawable/emptykadran" />
+        app:srcCompat="@drawable/emptykadran"
+        android:contentDescription="@string/todo90" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

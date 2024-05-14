@@ -43,7 +43,7 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
 
     implementation("com.google.firebase:firebase-auth")
-
+    implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.28")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

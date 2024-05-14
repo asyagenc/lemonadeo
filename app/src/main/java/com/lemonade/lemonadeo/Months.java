@@ -3,9 +3,11 @@ package com.lemonade.lemonadeo;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -23,6 +25,10 @@ public class Months extends AppCompatActivity {
     Button backMonth;
     Button[] otherButtons = new Button[12];
 
+    MediaPlayer correctMonths;
+    MediaPlayer incorrectMonths;
+    ImageView lemonadegirl;
+
     TextView message;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -35,9 +41,13 @@ public class Months extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_months);
 
+        correctMonths = MediaPlayer.create(this, R.raw.correct);
+        incorrectMonths = MediaPlayer.create(this, R.raw.incorrect);
+
         mainButton = findViewById(R.id.shuffleBttn);
         backMonth=findViewById(R.id.backBttnMonths);
         otherButtons = new Button[12]; // Array to hold references to all other buttons
+        lemonadegirl=findViewById(R.id.lemonadeGirlMonth);
 
         otherButtons[0] = findViewById(R.id.monthBttn1);
         otherButtons[1] = findViewById(R.id.monthBttn2);
@@ -69,6 +79,7 @@ public class Months extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                lemonadegirl.setImageResource(R.drawable.lemonadegirl);
 
                 currentMonth[0] = 1; // Reset current day to 1
                 String temp;
@@ -76,6 +87,7 @@ public class Months extends AppCompatActivity {
 
                 for (int i = 0; i <12; i++) {
                     otherButtons[i].setEnabled(true);
+                    otherButtons[i].setBackgroundColor(Color.parseColor("#838383"));
                 }
 
                 for (int j = 0; j < 12; j++) {
@@ -100,21 +112,25 @@ public class Months extends AppCompatActivity {
                 public void onClick(View v) {
                     if (currentMonth[0] == 1 && otherButtons[buttonIndex].getText().equals("January")) {
                         message.setText("Press for next month");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
                         currentMonth[0] = 2;
                     } else if (currentMonth[0] == 2 && otherButtons[buttonIndex].getText().equals("February")) {
                         message.setText("Press for next month");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
                         currentMonth[0] = 3;
                     } else if (currentMonth[0] == 3 && otherButtons[buttonIndex].getText().equals("March")) {
                         message.setText("Press for next month");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
                         currentMonth[0] = 4;
                     } else if (currentMonth[0] == 4 && otherButtons[buttonIndex].getText().equals("April")) {
                         message.setText("Press for next month");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
                         currentMonth[0] = 5;
@@ -122,6 +138,7 @@ public class Months extends AppCompatActivity {
 
                     else if (currentMonth[0] == 5 && otherButtons[buttonIndex].getText().equals("May")) {
                         message.setText("Press for next month");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
                         currentMonth[0] = 6;
@@ -129,6 +146,7 @@ public class Months extends AppCompatActivity {
 
                     else if (currentMonth[0] == 6 && otherButtons[buttonIndex].getText().equals("June")) {
                         message.setText("Press for next month");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
                         currentMonth[0] = 7;
@@ -136,41 +154,54 @@ public class Months extends AppCompatActivity {
 
                     else if (currentMonth[0] == 7 && otherButtons[buttonIndex].getText().equals("July")) {
                         message.setText("Press for next month");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
+                        currentMonth[0] = 8;
                     }
                     else if (currentMonth[0] == 8 && otherButtons[buttonIndex].getText().equals("August")) {
                         message.setText("Press for next month");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
-                       
+                        currentMonth[0] = 9;
+
                     }
                     else if (currentMonth[0] == 9 && otherButtons[buttonIndex].getText().equals("September")) {
                         message.setText("Press for next month");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
-                        
+                        currentMonth[0] = 10;
+
                     }
 
                     else if (currentMonth[0] == 10 && otherButtons[buttonIndex].getText().equals("October")) {
                         message.setText("Press for next month");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
+                        currentMonth[0] = 11;
 
                     }
 
                     else if (currentMonth[0] == 11 && otherButtons[buttonIndex].getText().equals("November")) {
                         message.setText("Press for next month");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
+                        currentMonth[0] = 12;
 
                     }
 
                     else if (currentMonth[0] == 12 && otherButtons[buttonIndex].getText().equals("December")) {
-                        message.setText("Press for next month");
+                        message.setText("CONGRATULATIONS");
+                        correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.GREEN);
                         otherButtons[buttonIndex].setEnabled(false);
+                        lemonadegirl.setImageResource(R.drawable.limonataa);
                         currentMonth[0] = 0;
+
 
                     }
 
@@ -183,4 +214,8 @@ public class Months extends AppCompatActivity {
 
 
     }
+
+
+
+
 }

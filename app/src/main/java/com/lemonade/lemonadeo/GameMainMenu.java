@@ -26,7 +26,7 @@ public class GameMainMenu extends AppCompatActivity {
 
 
         button=findViewById(R.id.homeBtn);
-        cardView=findViewById(R.id.clockCard);
+        cardView=findViewById(R.id.daysCardx);
         cardView2=findViewById(R.id.ballCard);
         cardView3=findViewById(R.id.monthCard);
         cardView4=findViewById(R.id.daysCard);

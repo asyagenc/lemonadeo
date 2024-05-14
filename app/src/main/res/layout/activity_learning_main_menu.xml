@@ -7,124 +7,128 @@
     android:layout_height="match_parent"
     android:background="#FFDBFFF5"
     tools:context=".LearningMainMenu">
-    
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/constraintLayout"
-        android:layout_marginTop="20dp">
+        app:layout_constraintBottom_toTopOf="@+id/homeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <LinearLayout
-          android:layout_width="0dp"
-          android:layout_height="175dp"
-          android:id="@+id/row1"
-          android:orientation="horizontal"
-          android:layout_marginTop="10dp"
-          android:padding="10dp"
-          app:layout_constraintHorizontal_bias="0.0"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_goneMarginTop="50dp"
-          >
-          <androidx.cardview.widget.CardView
-              android:layout_width="0dp"
-              android:layout_height="match_parent"
-              android:id="@+id/clockCard"
-              android:layout_margin="10dp"
-              android:layout_weight="1"
-              android:elevation="300dp"
-              app:cardCornerRadius="20dp">
-              <RelativeLayout
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content">
-
-                  <TextView
-                      android:id="@+id/clockName"
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:layout_below="@+id/clockImageViewx"
-                      android:layout_centerHorizontal="true"
-                      android:layout_marginTop="10dp"
-                      android:fontFamily="@font/crushed"
-                      android:text="clock learning"
-                      android:textSize="20sp" />
-                  <ImageView
-                      android:layout_width="70dp"
-                      android:layout_height="70dp"
-                      android:id="@+id/clockImageViewx"
-                      android:src="@drawable/time"
-                      android:layout_marginTop="15dp"
-                      android:layout_centerHorizontal="true"/>
-
-
-              </RelativeLayout>
-
-          </androidx.cardview.widget.CardView>
-
-
-          <androidx.cardview.widget.CardView
-              android:layout_width="0dp"
-              android:layout_height="match_parent"
-              android:id="@+id/seasonCard"
-              android:layout_margin="10dp"
-              android:layout_weight="1"
-              android:elevation="80dp"
-              app:cardCornerRadius="20dp">
-              <RelativeLayout
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content">
-
-                  <TextView
-                      android:id="@+id/seasonName"
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:layout_below="@+id/seasonsImageView"
-                      android:layout_centerHorizontal="true"
-                      android:layout_marginTop="10dp"
-                      android:fontFamily="@font/crushed"
-                      android:text="learning seasons"
-                      android:textSize="20sp" />
-                  <ImageView
-                      android:layout_width="70dp"
-                      android:layout_height="70dp"
-                      android:id="@+id/seasonsImageView"
-                      android:src="@drawable/seasons_"
-                      android:layout_marginTop="15dp"
-                      android:layout_centerHorizontal="true"/>
-
-
-              </RelativeLayout>
-
-          </androidx.cardview.widget.CardView>
-
-
-
-
-
-      </LinearLayout>
-
-
-        <LinearLayout
+            android:id="@+id/row1"
             android:layout_width="0dp"
             android:layout_height="175dp"
-            android:id="@+id/row2"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
             android:padding="10dp"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/row1"
-            >
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginTop="50dp">
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/daysCardx"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:id="@+id/monthCard"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:elevation="300dp"
                 app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/clockName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/clockImageViewx"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/crushed"
+                        android:text="@string/clock_learning"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/clockImageViewx"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/time" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/seasonCard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:elevation="80dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/seasonName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seasonsImageView"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/crushed"
+                        android:text="@string/learning_seasons"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/seasonsImageView"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/seasons_" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/row1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/monthCard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:elevation="300dp"
+                app:cardCornerRadius="20dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -137,15 +141,16 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/crushed"
-                        android:text="learning months"
+                        android:text="@string/learning_months"
                         android:textSize="20sp" />
+
                     <ImageView
+                        android:id="@+id/monthImageView"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/monthImageView"
-                        android:src="@drawable/month"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/month" />
 
 
                 </RelativeLayout>
@@ -154,13 +159,14 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/daysCard"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:id="@+id/daysCard"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:elevation="80dp"
                 app:cardCornerRadius="20dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -174,15 +180,16 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/crushed"
                         android:gravity="center_horizontal"
-                        android:text="learning days"
+                        android:text="@string/learning_days"
                         android:textSize="20sp" />
+
                     <ImageView
+                        android:id="@+id/daysImageView"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/daysImageView"
-                        android:src="@drawable/day_"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/day_" />
 
 
                 </RelativeLayout>
@@ -190,34 +197,31 @@
             </androidx.cardview.widget.CardView>
 
 
-
-
-
         </LinearLayout>
 
 
-
         <LinearLayout
+            android:id="@+id/row3"
             android:layout_width="0dp"
             android:layout_height="175dp"
-            android:id="@+id/row3"
-            android:orientation="horizontal"
             android:layout_marginTop="10dp"
+            android:orientation="horizontal"
             android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/row2"
-            app:layout_goneMarginTop="50dp"
-            >
+            app:layout_goneMarginTop="50dp">
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/multiplicationCard"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:id="@+id/multiplicationCard"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:elevation="300dp"
                 app:cardCornerRadius="20dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -230,15 +234,16 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/crushed"
-                        android:text="learn multiplication"
+                        android:text="@string/learn_multiplication"
                         android:textSize="20sp" />
+
                     <ImageView
+                        android:id="@+id/multiplicationImageView"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/multiplicationImageView"
-                        android:src="@drawable/multiplication"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/multiplication" />
 
 
                 </RelativeLayout>
@@ -247,13 +252,14 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/directionCard"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:id="@+id/directionCard"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:elevation="80dp"
                 app:cardCornerRadius="20dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -266,15 +272,16 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/crushed"
-                        android:text="learning directions"
+                        android:text="@string/learning_directions"
                         android:textSize="20sp" />
+
                     <ImageView
+                        android:id="@+id/directionImageView"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/directionImageView"
-                        android:src="@drawable/directions"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/directions" />
 
 
                 </RelativeLayout>
@@ -293,7 +300,7 @@
         android:layout_marginEnd="110dp"
         android:layout_marginBottom="33dp"
         android:backgroundTint="#8FFF9800"
-        android:text="Go Back to Homepage"
+        android:text="@string/go_back_to_homepage__"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

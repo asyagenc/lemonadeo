@@ -46,8 +46,7 @@ public class ClockLearning extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_clock_learning);
 
-        Toolbar toolbar = findViewById(R.id.toolbarClockLearning);
-        setSupportActionBar(toolbar);
+
 
         backClockLearning = findViewById(R.id.backBttnClockLearning);
         hourInput = findViewById(R.id.hourInput);

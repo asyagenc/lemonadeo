@@ -5,6 +5,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFDBFFF5"
     tools:context=".Math">
 
 
@@ -59,6 +60,7 @@
         android:id="@+id/textView3"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:gravity="center"
         android:text="  X"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,6 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:gravity="center"
         android:hint="answer"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"

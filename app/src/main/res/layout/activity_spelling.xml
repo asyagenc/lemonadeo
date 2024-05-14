@@ -134,8 +134,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:autofillHints="Enter your spelling"
-                android:gravity="center"
                 android:fontFamily="@font/bebas_neue"
+                android:gravity="center"
                 android:hint="@string/enter_your_spelling"
                 android:inputType="text"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -188,7 +188,7 @@
         android:layout_marginBottom="110dp"
         android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
-        android:text="EXIT"
+        android:text="@string/_exit_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -200,7 +200,7 @@
         android:gravity="center_vertical"
         android:text="@string/textviewee"
         android:textAllCaps="true"
-        android:textColor="#FFC107"
+        android:textColor="#8BC34A"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

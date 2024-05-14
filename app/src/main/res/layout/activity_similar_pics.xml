@@ -126,7 +126,7 @@
         android:layout_marginTop="75dp"
         android:layout_marginEnd="101dp"
         android:gravity="center|fill_vertical"
-        android:text="Choose the similar one!"
+        android:text="@string/choose_the_similar_one"
         android:textColor="#FF9800"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -140,7 +140,7 @@
         android:layout_marginEnd="165dp"
         android:layout_marginBottom="2dp"
         android:backgroundTint="#FF9800"
-        android:text="Exit"
+        android:text="@string/exit_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

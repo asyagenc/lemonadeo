@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".GoodJob">
 
     <ImageView
@@ -13,20 +14,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginBottom="312dp"
+        android:contentDescription="@string/todo_000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/konu"
-        android:contentDescription="@string/todo_000" />
+        app:srcCompat="@drawable/konu" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="297dp"
+        android:contentDescription="@string/todo_0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:srcCompat="@drawable/infrontof"
-        android:contentDescription="@string/todo_0" />
+        app:srcCompat="@drawable/infrontof" />
 
     <TextView
         android:id="@+id/textView10"
@@ -56,14 +57,14 @@
 
     <Button
         android:id="@+id/button12"
-        android:fontFamily="@font/bebas_neue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
         android:layout_marginEnd="111dp"
+        android:layout_marginBottom="218dp"
         android:backgroundTint="#FFC107"
 
-        android:layout_marginBottom="218dp"
+        android:fontFamily="@font/bebas_neue"
         android:text="@string/go_back_to_homepage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

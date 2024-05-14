@@ -64,18 +64,17 @@ public class MainActivity extends AppCompatActivity {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),LearningMainMenu.class);
+                Intent intent = new Intent(MainActivity.this, LearningMainMenu.class);
                 startActivity(intent);
-                finish();
             }
         });
 
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),GameMainMenu.class);
+                Intent intent = new Intent(MainActivity.this, GameMainMenu.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 

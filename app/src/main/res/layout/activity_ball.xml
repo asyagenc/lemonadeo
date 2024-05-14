@@ -15,42 +15,28 @@
 
     <!-- Top Resmi -->
 
-    <ImageView
-        android:id="@+id/backgroundImage"
-        android:layout_width="293dp"
-        android:layout_height="408dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/bilardomasa"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarBall"
-        app:layout_constraintVertical_bias="0.311" />
-
     <!-- Rate Switch -->
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarBall"
-        android:layout_width="0dp"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginTop="4dp"
-        android:background="#838383"
-        android:elevation="4dp"
-        android:fontFamily="@font/archivo_black"
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="446dp"
+        android:layout_height="679dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sky"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="Ball Game"
-        app:titleTextColor="@android:color/white" />
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/backBttnBall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FF8BC34A"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
-        android:text="@string/game_menu"
+        android:text="Game Menu"
         android:textColorLink="#838383"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,16 +47,16 @@
 
     <ImageView
         android:id="@+id/ballImageView"
-        android:layout_width="31dp"
-        android:layout_height="28dp"
+        android:layout_width="157dp"
+        android:layout_height="167dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/topp"
+        android:src="@drawable/hotair"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.419"
+        app:layout_constraintVertical_bias="0.47"
         tools:ignore="MissingConstraints" />
 
 

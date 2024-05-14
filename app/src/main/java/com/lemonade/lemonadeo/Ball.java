@@ -33,8 +33,7 @@ public class Ball extends AppCompatActivity {
         setContentView(R.layout.activity_ball);
         backBall = findViewById(R.id.backBttnBall);
         ballImageView = findViewById(R.id.ballImageView);
-        Toolbar toolbar = findViewById(R.id.toolbarBall);
-        setSupportActionBar(toolbar);
+
 
         random = new Random();
 
@@ -50,6 +49,9 @@ public class Ball extends AppCompatActivity {
 
         moveBall();
 
+
+
+
         // Handle system bar insets for layout adjustments
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -57,6 +59,8 @@ public class Ball extends AppCompatActivity {
             return insets;
         });
     }
+
+
 
     void moveBall() {
         // Masa alanının koordinatlarını al
@@ -68,18 +72,37 @@ public class Ball extends AppCompatActivity {
         int ballWidth = ballImageView.getWidth();
         int ballHeight = ballImageView.getHeight();
 
-        // Masa alanının içinde rastgele bir konum belirle
+        // Rastgele hedef konumları belirle, ekran sınırları içinde kalacak şekilde ayarla
         int randomX = random.nextInt(Math.max(1, backgroundImageWidth - ballWidth));
         int randomY = random.nextInt(Math.max(1, backgroundImageHeight - ballHeight));
 
-        // Belirlenen konuma topu yerleştir
+        // Ekran sınırlarını kontrol et
+        randomX = Math.max(0, randomX); // Sol sınıra çarpmasını önler
+        randomX = Math.min(backgroundImageWidth - ballWidth, randomX); // Sağ sınıra çarpmasını önler
+        randomY = Math.max(0, randomY); // Üst sınıra çarpmasını önler
+        randomY = Math.min(backgroundImageHeight - ballHeight, randomY); // Alt sınıra çarpmasını önler
+
+        // Animasyon oluştur
+        TranslateAnimation animation = new TranslateAnimation(0, randomX - ballImageView.getX(), 0, randomY - ballImageView.getY());
+
+        // Hareketin biraz daha yavaş olması için animasyon süresini arttır
+        animation.setDuration(2000); // Animasyon süresi, isteğinize göre ayarlayabilirsiniz
+
+        animation.setFillAfter(true);
+
+        // Animasyonu başlat
+        ballImageView.startAnimation(animation);
+
+        // Yeni konuma topu yerleştir
         ballImageView.setX(randomX);
         ballImageView.setY(randomY);
 
         // Tekrar animasyonu başlatmak için belirli bir süre sonra moveBall() fonksiyonunu çağır
         Handler handler = new Handler();
-        handler.postDelayed(this::moveBall, 1200); // Millisaniye cinsinden gecikme süresi (animasyon süresi + bir tampon süre)
+        handler.postDelayed(this::moveBall, 3000); // Millisaniye cinsinden gecikme süresi (animasyon süresi + bir tampon süre)
     }
+
+
 
 
 }

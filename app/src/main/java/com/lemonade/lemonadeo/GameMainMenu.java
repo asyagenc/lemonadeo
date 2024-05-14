@@ -49,9 +49,9 @@ public class GameMainMenu extends AppCompatActivity {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Clock.class);
+                Intent intent = new Intent(GameMainMenu.this, Clock.class);
                 startActivity(intent);
-                finish();}
+            }
         });
 
 
@@ -59,9 +59,8 @@ public class GameMainMenu extends AppCompatActivity {
         cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Months.class);
+                Intent intent = new Intent(GameMainMenu.this, Months.class);
                 startActivity(intent);
-                finish();
 
             }
         });
@@ -69,10 +68,8 @@ public class GameMainMenu extends AppCompatActivity {
         cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Days.class);
+                Intent intent = new Intent(GameMainMenu.this, Days.class);
                 startActivity(intent);
-                finish();
-
             }
         });
 
@@ -82,27 +79,24 @@ public class GameMainMenu extends AppCompatActivity {
         cardView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),mathMenu.class);
+                Intent intent = new Intent(GameMainMenu.this, mathMenu.class);
                 startActivity(intent);
-                finish();
             }
         });
 
         cardView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),similarPics.class);
+                Intent intent = new Intent(GameMainMenu.this, similarPics.class);
                 startActivity(intent);
-                finish();
             }
         });
 
         cardView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),spelling.class);
+                Intent intent = new Intent(GameMainMenu.this, spelling.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -111,9 +105,8 @@ public class GameMainMenu extends AppCompatActivity {
         cardView7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),game.class);
+                Intent intent = new Intent(GameMainMenu.this, spelling.class);
                 startActivity(intent);
-                finish();
             }
         });
 

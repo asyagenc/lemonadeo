@@ -25,7 +25,7 @@ public class multiplication extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_math_menu);
+        setContentView(R.layout.activity_multiplication);
 
         String difficulty = getIntent().getStringExtra("difficulty");
         if("Easy".equals(difficulty)){

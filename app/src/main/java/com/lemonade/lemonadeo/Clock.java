@@ -27,16 +27,18 @@ import java.util.Random;
 public class Clock extends AppCompatActivity {
 
     ImageView clockImageView;
-    TextView hourTextView;
-    TextView minuteTextView;
+
     Button playButton;
-    Button backClock;
     Button newButton;
     EditText inputHour;
     EditText inputMinute;
+    TextView score;
+    TextView result;
 
     int hour = 12;
     int minute = 0;
+    int total_score = 0;
+    int count = 0;
 
     Paint hourHandPaint;
     Paint minuteHandPaint;
@@ -47,13 +49,13 @@ public class Clock extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clock);
         clockImageView = findViewById(R.id.clockImageView);
-        hourTextView = findViewById(R.id.hourTextView);
-        minuteTextView = findViewById(R.id.minuteTextView);
         playButton = findViewById(R.id.playButton);
         inputHour = findViewById(R.id.inputHour);
         inputMinute = findViewById(R.id.inputMinute);
         newButton=findViewById(R.id.newButton);
-        backClock=findViewById(R.id.backBttnClock);
+        score=findViewById(R.id.scoreClock);
+        result=findViewById(R.id.resultClock);
+
 
         Resources resources = getResources();
         hourHandPaint = new Paint();
@@ -67,22 +69,13 @@ public class Clock extends AppCompatActivity {
         minuteHandPaint.setAntiAlias(true);
 
 
-        backClock.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),GameMainMenu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
 
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Oyun fonksiyonunu çağır
                 playGame();
-                minuteTextView.setVisibility(View.VISIBLE);
-                hourTextView.setVisibility(View.VISIBLE);
                 playButton.setEnabled(false);
             }
         });
@@ -90,15 +83,35 @@ public class Clock extends AppCompatActivity {
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(count == 10) {
+                    score.setText("Game Over! Your score is: " + score + "/10");
+                    if(total_score < 3 && total_score >= 0){
+                        result.setText("You should work harder to be an expert!");
+                        result.setVisibility(View.VISIBLE);
+                    }
+                    else if(total_score >= 3 && total_score <= 7){
+                        result.setText("You are getting closer to be an expert!");
+                        result.setVisibility(View.VISIBLE);
+                    }
+                    else if(total_score == 8 || total_score == 9){
+                        result.setText("You are an inch away to be an expert!");
+                        result.setVisibility(View.VISIBLE);
+                    }
+                    else if(total_score == count){
+                        result.setText("You are an expert!");
+                        result.setVisibility(View.VISIBLE);
+                    }
+                    return;
+                }
+                count++;
                 // Rastgele saat ve dakika seçimi
                 Random random = new Random();
-                hour = random.nextInt(12) + 1; // 1 ile 12 arasında rastgele bir saat seç
-                minute = random.nextInt(60); // 0 ile 59 arasında rastgele bir dakika seç
+                hour = random.nextInt(12) + 1; 
+                minute = random.nextInt(12)*5; 
+                score.setText("Score: " + total_score);
 
                 // Saat ve dakika ibrelerini çizme
                 drawClockHands();
-                minuteTextView.setVisibility(View.GONE);
-                hourTextView.setVisibility(View.GONE);
                 playButton.setEnabled(true);
             }
         });
@@ -107,53 +120,61 @@ public class Clock extends AppCompatActivity {
     }
 
     protected void onResume() {
+            super.onResume();
+            // Saat ve dakika ibrelerini çizme
+            if (clockImageView.getWidth() > 0 && clockImageView.getHeight() > 0) {
+                drawClockHands();
+            } else {
+               
+    
+            }
+        }
 
-        super.onResume();
-        // Saat ve dakika ibrelerini çizme
-        drawClockHands();
 
-    }
+
 
     private void drawClockHands() {
-        // Saat ve dakika değerlerini metin olarak güncelleme
-        updateClockText();
+        int imageViewWidth = clockImageView.getWidth();
+        int imageViewHeight = clockImageView.getHeight();
+        
+        int centerX = imageViewWidth / 2;
+        int centerY = (imageViewHeight / 2)-20;
 
-        // Drawable'dan Bitmap oluşturun
-        @SuppressLint("UseCompatLoadingForDrawables") Drawable drawable = getResources().getDrawable(R.drawable.emptykadran);
-        Bitmap clockBitmap = ((BitmapDrawable) drawable).getBitmap();
+        float hourHandLength = imageViewWidth * 0.13f; 
+        float minuteHandLength = imageViewWidth * 0.20f; 
+        hourHandPaint.setStrokeWidth(13f);
+        minuteHandPaint.setStrokeWidth(13f);
+        hourHandPaint.setColor(Color.parseColor("#20b2aa"));
+        minuteHandPaint.setColor(Color.parseColor("#ee1289"));
 
-        // Saat ve dakika ibrelerinin boyutlarını hesaplama
-        int centerX = clockBitmap.getWidth() / 2;
-        int centerY = clockBitmap.getHeight() / 2;
-
-        float hourHandLength = centerX * 0.5f;
-        float minuteHandLength = centerX * 0.7f;
-
-        // Yeni bir Bitmap oluşturun ve ona canvas bağlayın
-        Bitmap newBitmap = Bitmap.createBitmap(clockBitmap.getWidth(), clockBitmap.getHeight(), clockBitmap.getConfig());
-        Canvas canvas = new Canvas(newBitmap);
-        canvas.drawBitmap(clockBitmap, 0, 0, null);
-
-        // Saat ve dakika ibrelerinin açılarını hesaplama
         float hourAngle = (hour % 12 + minute / 60f) * 360 / 12;
         float minuteAngle = minute * 360 / 60;
 
-        // Saat ve dakika ibrelerini çizme
-        canvas.drawLine(centerX, centerY, centerX + (float) Math.cos(Math.toRadians(hourAngle - 90)) * hourHandLength, centerY + (float) Math.sin(Math.toRadians(hourAngle - 90)) * hourHandLength, hourHandPaint);
-        canvas.drawLine(centerX, centerY, centerX + (float) Math.cos(Math.toRadians(minuteAngle - 90)) * minuteHandLength, centerY + (float) Math.sin(Math.toRadians(minuteAngle - 90)) * minuteHandLength, minuteHandPaint);
 
-        // ImageView içine çizimi gösterme
-        clockImageView.setImageBitmap(newBitmap);
+        float hourX = centerX + (float) Math.cos(Math.toRadians(hourAngle - 90)) * hourHandLength;
+        float hourY = centerY + (float) Math.sin(Math.toRadians(hourAngle - 90)) * hourHandLength;
+        float minuteX = centerX + (float) Math.cos(Math.toRadians(minuteAngle - 90)) * minuteHandLength;
+        float minuteY = centerY + (float) Math.sin(Math.toRadians(minuteAngle - 90)) * minuteHandLength;
+
+
+        Bitmap bitmap = Bitmap.createBitmap(imageViewWidth, imageViewHeight, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+
+  
+        canvas.drawLine(centerX, centerY, hourX, hourY, hourHandPaint);
+        canvas.drawLine(centerX, centerY, minuteX, minuteY, minuteHandPaint);
+
+    
+        clockImageView.setImageBitmap(bitmap);
     }
 
-    private void updateClockText() {
-        hourTextView.setText("Saat " + hour);
-        minuteTextView.setText("Dakika " + minute);
-    }
 
-    // Oyun fonksiyonu (uygulamaya göre geliştirilecek)
+
+
+
+ 
     public void playGame() {
-        // Kullanıcının girişini alın
+       
 
         String strHour = inputHour.getText().toString().trim();
         String strMinute = inputMinute.getText().toString().trim();
@@ -162,17 +183,16 @@ public class Clock extends AppCompatActivity {
             int userHour = Integer.parseInt(strHour);
             int userMinute = Integer.parseInt(strMinute);
 
-            // Kullanıcının girdiği değerlerin kontrolü
+           
             if (userHour == hour && userMinute == minute) {
-                // Doğru cevap
-                Toast.makeText(getApplicationContext(), "Tebrikler, doğru cevap!", Toast.LENGTH_SHORT).show();
+               
+             Toast.makeText(getApplicationContext(), "Congrulations! Correct Answer.", Toast.LENGTH_SHORT).show();
+             total_score++;
             } else {
-                // Yanlış cevap
-                Toast.makeText(getApplicationContext(), "Maalesef yanlış cevap! Doğru cevap: " + hour + ":" + minute, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Wrong Answer! Correct Answer was " + hour + ":" + minute, Toast.LENGTH_LONG).show();
             }
         } else {
-            // Boş giriş
-            Toast.makeText(getApplicationContext(), "Lütfen saat ve dakika değerlerini giriniz.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Please enter valid values.", Toast.LENGTH_SHORT).show();
         }
     }
 }

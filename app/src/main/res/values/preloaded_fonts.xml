@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/archivo_black</item>
+        <item>@font/atomic_age</item>
+        <item>@font/bahiana</item>
+        <item>@font/barriecito</item>
+        <item>@font/barrio</item>
+        <item>@font/bebas_neue</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/boogaloo</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/chango</item>
+        <item>@font/cherry_swash</item>
+        <item>@font/crushed</item>
+        <item>@font/fascinate</item>
+        <item>@font/freckle_face</item>
+        <item>@font/mouse_memoirs</item>
+    </array>
+</resources>

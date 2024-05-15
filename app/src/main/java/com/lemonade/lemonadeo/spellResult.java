@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class spellResult extends AppCompatActivity {
 
-    Button button;
+
     Button button2;
 
 
@@ -24,13 +24,10 @@ public class spellResult extends AppCompatActivity {
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cartoon_music);
         mediaPlayer.start();
-        button=findViewById(R.id.Homepage);
+
         button2=findViewById(R.id.buttonTA);
 
-        button.setOnClickListener(v -> {
-            Intent intent = new Intent(spellResult.this, GameMainMenu.class);
-            startActivity(intent);
-        });
+
 
 
 

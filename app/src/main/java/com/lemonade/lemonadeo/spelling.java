@@ -42,7 +42,7 @@ public class spelling extends AppCompatActivity {
 
 
     TextView wordTextView,correctSpellingTextView,correct;
-    Button playButton,submitButton,nextButton,exitButton;
+    Button playButton,submitButton,nextButton;
     LinearLayoutCompat letterLayout;
     List<String> words;
     List<Integer> imageResources;
@@ -74,7 +74,6 @@ public class spelling extends AppCompatActivity {
         imageView=findViewById(R.id.imageView12);
         correctSpellingTextView=findViewById(R.id.textView13);
         wordTxt=findViewById(R.id.textView12);
-        exitButton=findViewById(R.id.button14);
         correct=findViewById(R.id.textView14);
 
 
@@ -117,14 +116,6 @@ public class spelling extends AppCompatActivity {
         submitButton.setOnClickListener(v -> checkSpelling());
         playButton.setOnClickListener(v -> playPronunciation());
 
-        exitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(spelling.this, MainActivity.class);
-                startActivity(intent);
-
-            }
-        });
 
 
         displayWord();

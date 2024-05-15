@@ -8,19 +8,20 @@
     android:background="#FFDBFFF5"
     tools:context=".Log">
 
+
     <TextView
         android:id="@+id/lemonade"
         android:layout_width="0dp"
         android:layout_height="42dp"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/lemonade_description"
         android:fontFamily="@font/crushed"
         android:gravity="center"
         android:text="@string/lemonade"
         android:textColor="#FF9800"
         android:textSize="45sp"
         android:textStyle="bold"
-        android:contentDescription="@string/lemonade_description"
         app:layout_constraintEnd_toStartOf="@+id/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,14 +31,13 @@
         android:id="@+id/logo"
         android:layout_width="0dp"
         android:layout_height="160dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/todoaa"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lemonade"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <EditText
         android:id="@+id/LogEmail"
@@ -48,54 +48,55 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHorizontal_bias="0.394"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintVertical_bias="0.596" />
 
     <EditText
         android:id="@+id/LogPasswordd"
         android:layout_width="377dp"
         android:layout_height="60dp"
+        android:autofillHints="password"
         android:ems="10"
         android:hint="@string/password_hint"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.547"
-        android:autofillHints="password" />
-
-    <Button
-        android:id="@+id/LogPageBttn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FF8BC34A"
-        android:fontFamily="@font/bebas_neue"
-        android:text="@string/login_"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.204"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/LogEmail"
+        app:layout_constraintVertical_bias="0.12" />
 
     <Button
         android:id="@+id/LogPageRegBttn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="132dp"
         android:backgroundTint="#FF8BC34A"
         android:fontFamily="@font/bebas_neue"
         android:text="@string/register_page"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintTop_toBottomOf="@+id/LogPasswordd"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <Button
+        android:id="@+id/LogPageBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="#FF8BC34A"
+        android:fontFamily="@font/bebas_neue"
+        android:text="@string/login_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/LogPageRegBttn"
+        app:layout_constraintHorizontal_bias="0.784"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71" />
+        app:layout_constraintTop_toBottomOf="@+id/LogPasswordd"
+        app:layout_constraintVertical_bias="0.031"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

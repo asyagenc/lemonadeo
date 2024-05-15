@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDBFFF5"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="395dp"
+        android:layout_height="271dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/cute_cartoon_brain_brain_illustration_png" />
+
+    <TextView
+        android:id="@+id/gameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myImageView"
+        android:layout_marginTop="-1dp"
+        android:fontFamily="@font/crushed"
+        android:gravity="center"
+        android:text="@string/memorize_the_digits_in_5_seconds_and_write_the_number_in_forwardly_or_backwardly"
+        android:textColor="#281C1C"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/forwardButton"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/choice"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/crushed"
+        android:text="@string/remember_forwardly"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backwardButton"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/choice"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/crushed"
+        android:text="@string/remember_backwardly"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+</RelativeLayout>

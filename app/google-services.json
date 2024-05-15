@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "471237714871",
+    "project_id": "lemonadeo-efe2d",
+    "storage_bucket": "lemonadeo-efe2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471237714871:android:779e245e4c174ae347be32",
+        "android_client_info": {
+          "package_name": "com.lemonade.lemonadeo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAonfM1NxXNDvHZ44xseIE8d9_PZPQMeXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,90 +2,120 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/bttnToLR"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFDBFFF5"
-    android:clickable="true"
-    android:focusable="true"
-    android:orientation="horizontal"
-    tools:context=".Directions">
-
-    <TextView
-        android:id="@+id/myCats"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:gravity="center_horizontal"
-        android:text="@string/these_are_my_cats"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/Molly"
-        tools:layout_editor_absoluteX="-9dp" />
+    tools:context=".firstScreen">
 
     <ImageView
-        android:id="@+id/Daisy"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="15dp"
-        android:layout_weight="1"
-        android:contentDescription="@string/todo3"
+        android:id="@+id/imageView9"
+        android:layout_width="227dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/Molly"
-        app:layout_constraintTop_toBottomOf="@+id/daisy"
-        app:srcCompat="@drawable/right" />
-
-    <TextView
-        android:id="@+id/daisy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
-        android:text="@string/daisy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/molly"
-        tools:layout_editor_absoluteY="106dp" />
-
-    <TextView
-        android:id="@+id/molly"
-        android:layout_width="45dp"
-        android:layout_height="22dp"
-        android:text="@string/molly"
-
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="103dp" />
-
-    <ImageView
-        android:id="@+id/Molly"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:contentDescription="@string/todo5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/molly"
-        app:srcCompat="@drawable/left" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="303dp"
-        android:layout_marginTop="58dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="18dp"
-        android:backgroundTint="#FFC107"
-        android:fontFamily="@font/bebas_neue"
-        android:text="@string/next"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/UKCard"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="1"
+        android:elevation="300dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.406"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myCats"
-        app:layout_constraintVertical_bias="0.962" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/uk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/todo04"
+                android:scaleType="centerCrop"
+                android:src="@drawable/uk" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bebas_neue"
+        android:text="Welcome to Lemonade World !"
+        android:textColor="#4CAF50"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turkishCard"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <TextView
+        android:id="@+id/selectLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/bebas_neue"
+        android:text="please select a language option before starting."
+        android:textColor="#4CAF50"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/turkishCard"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="1"
+        android:elevation="300dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/turkish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/todo04"
+                android:scaleType="centerCrop"
+                android:src="@drawable/turkey_hires" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

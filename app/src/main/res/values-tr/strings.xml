@@ -193,4 +193,17 @@
     <string name="exit_">Çıkış</string>
     <string name="_exit_">ÇIKIŞ</string>
     <string name="seasons_of_the_year">Yılın Mevsimleri</string>
+    <string name="learn_the_months">Ayları Öğren</string>
+    <string name="login_page">Giriş Sayfası</string>
+    <string name="analog_clock_game">Analog Saat Oyunu</string>
+    <string name="digital_clock_game">Dijital Saat Oyunu</string>
+    <string name="learning_analog_clock">Analog Saat Öğrenme</string>
+    <string name="learning_digital_clock">Dijital Saat Öğrenme</string>
+    <string name="select_difficulty_">ZORLUK SEVİYESİ SEÇİN:</string>
+    <string name="easy_">Kolay</string>
+    <string name="medium_">ORTA</string>
+    <string name="hard_">Zor</string>
+    <string name="submit_your_answer">Cevabınızı Gönderin</string>
+
+
 </resources>

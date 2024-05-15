@@ -20,7 +20,7 @@ public class GoodJob extends AppCompatActivity {
     TextView textView2;
     ImageView imageView;
     ImageView imageView2;
-    Button button;
+
 
 
     @Override
@@ -38,18 +38,11 @@ public class GoodJob extends AppCompatActivity {
         imageView2=findViewById(R.id.imageView8);
         textView=findViewById(R.id.textView10);
         textView2=findViewById(R.id.textView11);
-        button=findViewById(R.id.button12);
 
 
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent= new Intent(getApplicationContext(),LearningMainMenu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

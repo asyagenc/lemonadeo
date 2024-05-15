@@ -58,7 +58,7 @@
         android:textSize="20sp"
         android:backgroundTint="#FF009688"
         android:fontFamily="@font/crushed"
-        android:text="Submit Your Answer"
+        android:text="@string/submit_your_answer"
         android:visibility="visible" />
 
     <TextView

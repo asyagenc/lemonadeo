@@ -199,4 +199,9 @@
     <string name="digital_clock_game">Digital Clock Game</string>
     <string name="learning_analog_clock">Learning Analog Clock</string>
     <string name="learning_digital_clock">Learning Digital Clock</string>
+    <string name="select_difficulty_">SELECT DIFFICULTY:</string>
+    <string name="easy_">Easy</string>
+    <string name="medium_">MEDIUM</string>
+    <string name="hard_">Hard</string>
+    <string name="submit_your_answer">Submit Your Answer</string>
 </resources>

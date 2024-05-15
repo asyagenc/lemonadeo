@@ -23,7 +23,7 @@ public class Days extends AppCompatActivity {
 
     Button mainButton;
     Button[] otherButtons = new Button[7];
-    Button backDays;
+
 
     TextView message,boyBubble,text;
     MediaPlayer correctDays;
@@ -47,7 +47,6 @@ public class Days extends AppCompatActivity {
         otherButtons[5] = findViewById(R.id.dayBttn6);
         otherButtons[6] = findViewById(R.id.dayBttn7);
         message = findViewById(R.id.textView15);
-        backDays = findViewById(R.id.backBttnDays);
         lemonadegirl = findViewById(R.id.imageView11);
         gifImageView=findViewById(R.id.gif);
         boyBubble=findViewById(R.id.textView16);
@@ -63,14 +62,7 @@ public class Days extends AppCompatActivity {
 
 
 
-        backDays.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), GameMainMenu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
 
         int[] currentDay = {1};
 

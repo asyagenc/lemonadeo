@@ -107,6 +107,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.7" />
 
+
     <Button
         android:id="@+id/shuffleBttn"
         android:layout_width="wrap_content"
@@ -116,25 +117,10 @@
         android:text="@string/shuffle__"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.872" />
-
-    <Button
-        android:id="@+id/backBttnDays"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FF8BC34A"
-        android:fontFamily="@font/bebas_neue"
-        android:text="@string/exit__"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.873" />
-
+        app:layout_constraintVertical_bias="0.808" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -189,11 +175,11 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
         android:text="@string/textview____"
-        app:layout_constraintBottom_toTopOf="@+id/backBttnDays"
+        app:layout_constraintBottom_toBottomOf="@+id/gif"
         app:layout_constraintEnd_toEndOf="@+id/dayBttn7"
-        app:layout_constraintStart_toStartOf="@+id/dayBttn7" />
+        app:layout_constraintStart_toStartOf="@+id/dayBttn7"
+        app:layout_constraintTop_toBottomOf="@+id/shuffleBttn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -219,7 +219,7 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="165dp"
+        android:layout_marginTop="72dp"
         android:fontFamily="@font/crushed"
         android:gravity="center"
         android:text="@string/learn_the_months"
@@ -227,13 +227,9 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

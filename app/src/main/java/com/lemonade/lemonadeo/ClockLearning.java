@@ -101,11 +101,12 @@ public class ClockLearning extends AppCompatActivity {
     }
 
     protected void onResume() {
+        // Saat ve dakika ibrelerini çizme
         super.onResume();
         if (emptyLearnCLock.getWidth() > 0 && emptyLearnCLock.getHeight() > 0) {
             drawClockHands();
         } else {
-         
+            // Bekleme ya da başka bir işlem yapma
         }
 
     }
@@ -120,31 +121,33 @@ public class ClockLearning extends AppCompatActivity {
         int centerX = imageViewWidth / 2;
         int centerY = (imageViewHeight / 2)-20;
 
-        float hourHandLength = imageViewWidth * 0.13f; 
-        float minuteHandLength = imageViewWidth * 0.20f; 
+        float hourHandLength = imageViewWidth * 0.13f; // Yelkovanın uzunluğu
+        float minuteHandLength = imageViewWidth * 0.20f; // Akrebin uzunluğu
         hourHandPaint.setStrokeWidth(13f);
         minuteHandPaint.setStrokeWidth(13f);
         hourHandPaint.setColor(Color.parseColor("#20b2aa"));
         minuteHandPaint.setColor(Color.parseColor("#ee1289"));
 
 
-        
+        // Saat ve dakika ibrelerini çizme
         float hourAngle = (hour % 12 + minute / 60f) * 360 / 12;
         float minuteAngle = minute * 360 / 60;
 
-       
+        // Saat ve dakika ibrelerini çizmek için başlangıç ve bitiş noktalarını belirle
         float hourX = centerX + (float) Math.cos(Math.toRadians(hourAngle - 90)) * hourHandLength;
         float hourY = centerY + (float) Math.sin(Math.toRadians(hourAngle - 90)) * hourHandLength;
         float minuteX = centerX + (float) Math.cos(Math.toRadians(minuteAngle - 90)) * minuteHandLength;
         float minuteY = centerY + (float) Math.sin(Math.toRadians(minuteAngle - 90)) * minuteHandLength;
 
-
+        // ImageView üzerine çizim yapmak için bir Canvas oluştur
         Bitmap bitmap = Bitmap.createBitmap(imageViewWidth, imageViewHeight, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
 
+        // Saat ve dakika ibrelerini çizin
         canvas.drawLine(centerX, centerY, hourX, hourY, hourHandPaint);
         canvas.drawLine(centerX, centerY, minuteX, minuteY, minuteHandPaint);
 
+        // ImageView'a yeni bitmap'i ayarlayın
         emptyLearnCLock.setImageBitmap(bitmap);
     }
 

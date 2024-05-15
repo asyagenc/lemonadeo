@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
-    Button LogOut;
+    ImageButton LogOut;
     TextView textview;
     FirebaseUser user;
     CardView cardView;

@@ -5,32 +5,32 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC107"
+    android:background="#FFDBFFF5"
     tools:context=".ClockLearning">
 
-    <Button
-        android:id="@+id/backBttnClockLearning"
-        android:layout_width="35dp"
-        android:layout_height="32dp"
-        android:backgroundTint="#FF8BC34A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.042"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.121" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/backgroundImageClockLearning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundclocks"
+        tools:context=".ClockLearning"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="63dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/emptyClock"
-        android:layout_width="298dp"
-        android:layout_height="308dp"
-        android:scaleType="fitXY"
+        android:layout_width="334dp"
+        android:layout_height="350dp"
+        android:layout_marginEnd="36dp"
+        android:contentDescription="@string/todo90"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.336"
+        app:layout_constraintVertical_bias="0.242"
         app:srcCompat="@drawable/clocklearning" />
 
     <EditText

@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class GameMainMenu extends AppCompatActivity {
 
-    Button button;
+
     CardView cardView,cardView2,cardView3,cardView4,cardView5,cardView6,cardView7,cardView8;
 
 
@@ -25,7 +25,7 @@ public class GameMainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_game_main_menu);
 
 
-        button=findViewById(R.id.homeBtn);
+
         cardView=findViewById(R.id.daysCardx);
         cardView2=findViewById(R.id.ballCard);
         cardView3=findViewById(R.id.monthCard);
@@ -37,19 +37,12 @@ public class GameMainMenu extends AppCompatActivity {
 
 
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GameMainMenu.this, Clock.class);
+                Intent intent = new Intent(GameMainMenu.this, clockMenu.class);
                 startActivity(intent);
             }
         });

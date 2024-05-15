@@ -194,4 +194,14 @@
     <string name="_exit_">EXIT</string>
     <string name="seasons_of_the_year">Seasons of the Year</string>
     <string name="learn_the_months">Learn the Months</string>
+    <string name="login_page">Login Page</string>
+    <string name="analog_clock_game">Analog Clock Game</string>
+    <string name="digital_clock_game">Digital Clock Game</string>
+    <string name="learning_analog_clock">Learning Analog Clock</string>
+    <string name="learning_digital_clock">Learning Digital Clock</string>
+    <string name="select_difficulty_">SELECT DIFFICULTY:</string>
+    <string name="easy_">Easy</string>
+    <string name="medium_">MEDIUM</string>
+    <string name="hard_">Hard</string>
+    <string name="submit_your_answer">Submit Your Answer</string>
 </resources>

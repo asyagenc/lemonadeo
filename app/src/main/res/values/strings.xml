@@ -195,4 +195,8 @@
     <string name="seasons_of_the_year">Seasons of the Year</string>
     <string name="learn_the_months">Learn the Months</string>
     <string name="login_page">Login Page</string>
+    <string name="analog_clock_game">Analog Clock Game</string>
+    <string name="digital_clock_game">Digital Clock Game</string>
+    <string name="learning_analog_clock">Learning Analog Clock</string>
+    <string name="learning_digital_clock">Learning Digital Clock</string>
 </resources>

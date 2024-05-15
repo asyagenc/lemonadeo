@@ -42,7 +42,7 @@ public class GameMainMenu extends AppCompatActivity {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GameMainMenu.this, Clock.class);
+                Intent intent = new Intent(GameMainMenu.this, clockMenu.class);
                 startActivity(intent);
             }
         });

@@ -13,24 +13,23 @@
         android:layout_width="0dp"
         android:layout_height="42dp"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/lemonade_description"
         android:fontFamily="@font/crushed"
         android:gravity="center"
         android:text="@string/lemonade"
         android:textColor="#FF9800"
         android:textSize="45sp"
         android:textStyle="bold"
-        android:contentDescription="@string/lemonade_description"
         app:layout_constraintEnd_toStartOf="@+id/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="0dp"
         android:layout_height="160dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/todoaa"
         android:src="@drawable/logo"
@@ -47,53 +46,55 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHorizontal_bias="0.394"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintVertical_bias="0.596" />
 
     <EditText
         android:id="@+id/RegPasswordd"
         android:layout_width="377dp"
         android:layout_height="60dp"
+        android:autofillHints="password"
         android:ems="10"
         android:hint="@string/password_hint"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.547" />
+        app:layout_constraintTop_toBottomOf="@+id/RegEmail"
+        app:layout_constraintVertical_bias="0.12" />
 
     <Button
         android:id="@+id/RegPageBttn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
         android:backgroundTint="#FF8BC34A"
         android:fontFamily="@font/bebas_neue"
         android:text="REGISTER"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintEnd_toStartOf="@+id/RegPageLogBttn"
+        app:layout_constraintHorizontal_bias="0.752"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708"
+        app:layout_constraintTop_toBottomOf="@+id/RegPasswordd"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/RegPageLogBttn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="136dp"
         android:backgroundTint="#FF8BC34A"
         android:fontFamily="@font/bebas_neue"
-        android:text="LogIN Page"
+        android:text="@string/login_page"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.757"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71" />
+        app:layout_constraintTop_toBottomOf="@+id/RegPasswordd"
+        app:layout_constraintVertical_bias="0.208" />
 
     <ProgressBar
         android:id="@+id/progressBar"

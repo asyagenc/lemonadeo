@@ -9,6 +9,7 @@
     tools:context=".learnDays">
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="none"
@@ -24,9 +25,9 @@
                 android:id="@+id/monCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:elevation="120dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:layout_width="150dp"
@@ -37,12 +38,12 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/tuesdayCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tuesdayCard"
+                android:layout_margin="8dp"
                 android:elevation="120dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:layout_width="150dp"
@@ -53,12 +54,12 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/wedCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/wedCard"
+                android:layout_margin="8dp"
                 android:elevation="120dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:layout_width="150dp"
@@ -69,12 +70,12 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/thursdayCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/thursdayCard"
+                android:layout_margin="8dp"
                 android:elevation="120dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:layout_width="150dp"
@@ -85,12 +86,12 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/fridayCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/fridayCard"
+                android:layout_margin="8dp"
                 android:elevation="120dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:layout_width="150dp"
@@ -103,9 +104,9 @@
                 android:id="@+id/saturdayCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:elevation="120dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:layout_width="150dp"
@@ -116,12 +117,12 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/sundayCard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sundayCard"
+                android:layout_margin="8dp"
                 android:elevation="120dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:layout_width="150dp"
@@ -139,7 +140,7 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="165dp"
+        android:layout_marginTop="76dp"
         android:fontFamily="@font/crushed"
         android:gravity="center"
         android:text="@string/days_of_the_week"

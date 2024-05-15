@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ResultActivity extends AppCompatActivity {
 
-    Button button;
+
     Button button2;
 
 
@@ -28,16 +28,8 @@ public class ResultActivity extends AppCompatActivity {
 
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cartoon_music);
         mediaPlayer.start();
-        button=findViewById(R.id.Homepage);
-        button2=findViewById(R.id.buttonTA);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ResultActivity.this, GameMainMenu.class);
-                startActivity(intent);
-            }
-        });
+        button2=findViewById(R.id.buttonTA);
 
 
 

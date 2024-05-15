@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class LearningMainMenu extends AppCompatActivity {
 
-   Button button;
+
    CardView cardView,cardView2,cardView3,cardView4,cardView5,cardView6;
 
 
@@ -26,7 +26,6 @@ public class LearningMainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_learning_main_menu);
 
 
-        button=findViewById(R.id.homeBtn);
         cardView=findViewById(R.id.daysCardx);
         cardView2=findViewById(R.id.seasonCard);
         cardView3=findViewById(R.id.monthCard);
@@ -34,19 +33,12 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView5=findViewById(R.id.multiplicationCard);
         cardView6=findViewById(R.id.directionCard)  ;
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),ClockLearning.class);
+                Intent intent=new Intent(getApplicationContext(),clockMenuLearn.class);
                 startActivity(intent);
                 finish();}
         });
@@ -54,7 +46,7 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),SeasonsLearning.class);
+                Intent intent=new Intent(getApplicationContext(),learnSeasons.class);
                 startActivity(intent);
                 finish();
 

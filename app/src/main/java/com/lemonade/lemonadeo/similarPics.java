@@ -42,10 +42,10 @@ public class similarPics extends AppCompatActivity {
         mediaPlayer = MediaPlayer.create(this, R.raw.correct);
         mediaPlayerIncorrect = MediaPlayer.create(this, R.raw.incorrect);
 
-
         mainImageView = findViewById(R.id.mainImageView);
         similarImageView1 = findViewById(R.id.similarImageView1);
         similarImageView2 = findViewById(R.id.similarImageView2);
+
 
 
         similarImageView1.setOnClickListener(v -> {

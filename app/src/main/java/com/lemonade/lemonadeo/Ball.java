@@ -31,7 +31,6 @@ public class Ball extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_ball);
-        backBall = findViewById(R.id.backBttnBall);
         ballImageView = findViewById(R.id.ballImageView);
 
 

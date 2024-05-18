@@ -72,7 +72,7 @@ public class Days extends AppCompatActivity {
                 currentDay[0] = 1; // Reset current day to 1
                 String temp;
                 String temp2;
-                lemonadegirl.setImageResource(R.drawable.lemonadestandboyy);
+                lemonadegirl.setImageResource(R.drawable.lemlemboy);
                 boyBubble.setVisibility(View.VISIBLE);
                 lemonadegirl.setVisibility(View.VISIBLE);
                 text.setVisibility(View.GONE);

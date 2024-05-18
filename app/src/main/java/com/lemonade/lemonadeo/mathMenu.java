@@ -23,7 +23,6 @@ public class mathMenu extends AppCompatActivity {
         easyButton = findViewById(R.id.easyButton);
         mediumButton = findViewById(R.id.mediumButton);
         hardButton = findViewById(R.id.hardButton);
-        gameMenuButton = findViewById(R.id.gameMenuButton);
 
         easyButton.setOnClickListener(new View.OnClickListener() {
             @Override

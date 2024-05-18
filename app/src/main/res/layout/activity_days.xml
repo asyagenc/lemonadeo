@@ -14,7 +14,7 @@
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF9800"
-        android:fontFamily="@font/bebas_neue"
+        android:fontFamily="@font/crushed"
         android:text="@string/monday__"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -165,16 +165,16 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
 
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/crushed"
         android:text="@string/textview___"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView11"
-        app:layout_constraintStart_toStartOf="@+id/textView16"
-        app:layout_constraintTop_toTopOf="@+id/gif" />
+        app:layout_constraintBottom_toTopOf="@+id/shuffleBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayBttn7" />
 
     <TextView
         android:id="@+id/textView17"

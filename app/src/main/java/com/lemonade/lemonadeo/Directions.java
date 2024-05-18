@@ -14,11 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Directions extends AppCompatActivity {
     TextView textView;
-    TextView textView2;
-    TextView textView3;
 
     ImageView imageView;
-    ImageView imageView2;
     Button button;
 
 
@@ -29,10 +26,7 @@ public class Directions extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_directions);
         textView=findViewById(R.id.myCats);
-        textView2=findViewById(R.id.molly);
-        textView3=findViewById(R.id.daisy);
-        imageView=findViewById(R.id.Molly);
-        imageView2=findViewById(R.id.Daisy);
+        imageView=findViewById(R.id.imageView13);
         button=findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {

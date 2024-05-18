@@ -30,11 +30,8 @@ public class LeftNRight extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_left_nright);
 
-        textView=findViewById(R.id.Molly_txt);
-        textView2=findViewById(R.id.Daisy_txt);
         textView3=findViewById(R.id.textView);
-        imageView=findViewById(R.id.imageView);
-        imageView2=findViewById(R.id.imageView2);
+        imageView=findViewById(R.id.imageView2);
         button=findViewById(R.id.button2);//next
         button2=findViewById(R.id.button3);//back
 

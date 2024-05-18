@@ -35,7 +35,6 @@ public class GoodJob extends AppCompatActivity {
 
 
         imageView=findViewById(R.id.imageView6);
-        imageView2=findViewById(R.id.imageView8);
         textView=findViewById(R.id.textView10);
         textView2=findViewById(R.id.textView11);
 

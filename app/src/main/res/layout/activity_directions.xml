@@ -15,76 +15,40 @@
         android:id="@+id/myCats"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="167dp"
+        android:layout_marginBottom="84dp"
         android:fontFamily="@font/crushed"
         android:gravity="center_horizontal"
-        android:text="@string/these_are_my_cats"
+        android:text="This is my chicken Penny. She can be really naughty can you help me find her?"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/Daisy"
-        android:layout_width="194dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:layout_marginBottom="65dp"
-        android:layout_weight="1"
-        android:contentDescription="@string/todo3"
-        app:layout_constraintBottom_toTopOf="@+id/myCats"
-        app:layout_constraintStart_toEndOf="@+id/Molly"
-        app:layout_constraintTop_toBottomOf="@+id/daisy"
-        app:srcCompat="@drawable/right" />
-
-    <TextView
-        android:id="@+id/daisy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="92dp"
-        android:fontFamily="@font/crushed"
-        android:text="@string/daisy"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/molly"
-        android:layout_width="45dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="87dp"
-
-        android:layout_marginBottom="42dp"
-        android:fontFamily="@font/crushed"
-        android:text="@string/molly"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/myCats"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/Molly"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="208dp"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="@string/todo5"
-        app:layout_constraintEnd_toStartOf="@+id/Daisy"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/left" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
         android:backgroundTint="#FFC107"
         android:fontFamily="@font/crushed"
         android:text="@string/next"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="303dp"
-        tools:layout_editor_absoluteY="591dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="269dp"
+        android:layout_height="278dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376"
+        app:srcCompat="@drawable/up_preposition_of_place" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

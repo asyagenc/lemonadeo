@@ -36,25 +36,28 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="208dp"
-        android:layout_height="189dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="35dp"
+        android:layout_width="230dp"
+        android:layout_height="243dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="36dp"
         android:contentDescription="@string/todo0"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/infrontof" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/in_front_of_preposition_of_place" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="152dp"
         android:fontFamily="@font/crushed"
         android:gravity="center"
-        android:text="@string/where_is_daisy"
+        android:text="Where is Penny?"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -62,13 +65,14 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="167dp"
+        android:layout_marginBottom="112dp"
         android:fontFamily="@font/crushed"
 
         android:gravity="center|start"
-        android:text="@string/she_is_in_front_of_the_red_vase"
+        android:text="She is in front of the box."
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

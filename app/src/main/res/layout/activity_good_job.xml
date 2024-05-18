@@ -8,34 +8,12 @@
     android:background="#FFDBFFF5"
     tools:context=".GoodJob">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="252dp"
-        android:contentDescription="@string/todo_000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/konu" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="240dp"
-        android:contentDescription="@string/todo_0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:srcCompat="@drawable/infrontof" />
-
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="170dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="170dp"
         android:fontFamily="@font/crushed"
         android:text="@string/good_job"
@@ -51,11 +29,21 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/crushed"
         android:gravity="center"
-        android:text="@string/thanks_for_helping_me_with_my_cats_they_are_really_hard_to_find"
+        android:text="Thanks for helping me with Penny. She is really hard to find."
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="296dp"
+        android:layout_height="216dp"
+        android:layout_marginBottom="182dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="182dp" />
+        app:srcCompat="@drawable/across_preposition_of_place" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

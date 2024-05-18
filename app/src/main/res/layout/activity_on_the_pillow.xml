@@ -10,14 +10,14 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="194dp"
-        android:layout_height="120dp"
+        android:layout_width="288dp"
+        android:layout_height="246dp"
         android:contentDescription="@string/todo__"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/on" />
+        app:srcCompat="@drawable/on_preposition_of_place" />
 
     <Button
         android:id="@+id/button10"
@@ -37,9 +37,9 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="104dp"
         android:fontFamily="@font/crushed"
-        android:text="Daisy is sleeping ON her pillow."
+        android:text="Right! She is on top of the box."
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button10"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,9 +63,9 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="154dp"
+        android:layout_marginTop="160dp"
         android:fontFamily="@font/crushed"
-        android:text="Shhh! Be silent."
+        android:text="Where is she now?"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

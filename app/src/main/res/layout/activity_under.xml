@@ -38,22 +38,24 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="193dp"
-        android:layout_height="132dp"
+        android:layout_width="231dp"
+        android:layout_height="230dp"
         android:contentDescription="@string/todo_o"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/under" />
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@drawable/under_preposition_of_place" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="160dp"
         android:fontFamily="@font/crushed"
-        android:text="@string/where_is_molly_now"
+        android:text="Penny come back here!"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,9 +65,9 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="152dp"
+        android:layout_marginBottom="112dp"
         android:fontFamily="@font/crushed"
-        android:text="@string/she_is_under_the_newspaper"
+        android:text="She is right under the box."
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toEndOf="parent"

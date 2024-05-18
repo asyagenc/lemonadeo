@@ -15,23 +15,24 @@
         android:id="@+id/myCats"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginBottom="167dp"
+        android:fontFamily="@font/crushed"
         android:gravity="center_horizontal"
         android:text="@string/these_are_my_cats"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/Molly"
-        tools:layout_editor_absoluteX="-9dp" />
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/Daisy"
-        android:layout_width="0dp"
+        android:layout_width="194dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="65dp"
         android:layout_weight="1"
         android:contentDescription="@string/todo3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@+id/myCats"
         app:layout_constraintStart_toEndOf="@+id/Molly"
         app:layout_constraintTop_toBottomOf="@+id/daisy"
         app:srcCompat="@drawable/right" />
@@ -40,50 +41,50 @@
         android:id="@+id/daisy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="92dp"
+        android:fontFamily="@font/crushed"
         android:text="@string/daisy"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/molly"
-        tools:layout_editor_absoluteY="106dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/molly"
         android:layout_width="45dp"
         android:layout_height="22dp"
-        android:text="@string/molly"
+        android:layout_marginStart="87dp"
 
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="103dp" />
+        android:layout_marginBottom="42dp"
+        android:fontFamily="@font/crushed"
+        android:text="@string/molly"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/myCats"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/Molly"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="8dp"
         android:contentDescription="@string/todo5"
+        app:layout_constraintEnd_toStartOf="@+id/Daisy"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/molly"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/left" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="303dp"
-        android:layout_marginTop="58dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="18dp"
         android:backgroundTint="#FFC107"
-        android:fontFamily="@font/bebas_neue"
+        android:fontFamily="@font/crushed"
         android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myCats"
-        app:layout_constraintVertical_bias="0.962" />
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="303dp"
+        tools:layout_editor_absoluteY="591dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

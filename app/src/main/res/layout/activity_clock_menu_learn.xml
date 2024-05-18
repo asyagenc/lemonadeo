@@ -106,7 +106,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:fontFamily="@font/bebas_neue"
+        android:fontFamily="@font/crushed"
         android:text="Choose"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@id/analogCard"

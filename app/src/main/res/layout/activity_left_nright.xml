@@ -12,91 +12,85 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:layout_marginEnd="84dp"
+        android:layout_marginBottom="47dp"
         android:contentDescription="@string/todo000"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/Daisy_txt"
         app:srcCompat="@drawable/right" />
 
     <TextView
         android:id="@+id/Daisy_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="144dp"
-        android:layout_marginEnd="125dp"
+        android:layout_marginTop="189dp"
+        android:layout_marginEnd="97dp"
+        android:fontFamily="@font/crushed"
         android:text="@string/daisy"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Molly_txt"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Molly_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="144dp"
-        android:layout_marginEnd="74dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/crushed"
         android:text="@string/molly"
-        app:layout_constraintEnd_toStartOf="@+id/Daisy_txt"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="208dp"
         android:contentDescription="@string/todo00"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Molly_txt"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/left" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="292dp"
+        android:layout_marginBottom="167dp"
+        android:fontFamily="@font/crushed"
         android:gravity="center"
         android:text="@string/daisy_is_the_one_on_the_right_and_molly_is_the_one_on_the_left"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="210dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
         android:backgroundTint="#FFC107"
-        android:fontFamily="@font/bebas_neue"
+        android:fontFamily="@font/crushed"
         android:text="@string/next00"
-
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
         android:backgroundTint="#FFC107"
-        android:fontFamily="@font/bebas_neue"
+        android:fontFamily="@font/crushed"
         android:text="@string/back"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,9 +12,6 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatEditText;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -53,11 +50,10 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         mAuth=FirebaseAuth.getInstance();
-        AppCompatEditText  editTextEmail=findViewById(R.id.RegEmail);
-        AppCompatEditText  editTextPassword=findViewById(R.id.RegPasswordd);
-        regBttn=findViewById(R.id.RegPageBttn);
-        bar=findViewById(R.id.progressBar);
-        LogPageBttn=findViewById(R.id.RegPageLogBttn);
+        AppCompatEditText  editTextEmail=findViewById(R.id.LogEmail);
+        AppCompatEditText  editTextPassword=findViewById(R.id.LogPasswordd);
+        regBttn=findViewById(R.id.LogPageBttn);
+        LogPageBttn=findViewById(R.id.LogPageRegBttn);
 
         LogPageBttn.setOnClickListener(new View.OnClickListener() {
             @Override

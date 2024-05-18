@@ -10,10 +10,10 @@
 
     <TextView
         android:id="@+id/lemonade"
-        android:layout_width="0dp"
+        android:layout_width="189dp"
         android:layout_height="42dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="276dp"
         android:contentDescription="@string/lemonade_description"
         android:fontFamily="@font/crushed"
         android:gravity="center"
@@ -21,93 +21,77 @@
         android:textColor="#FF9800"
         android:textSize="45sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="0dp"
+        android:layout_width="189dp"
         android:layout_height="160dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="12dp"
         android:contentDescription="@string/todoaa"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lemonade"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/RegEmail"
+        android:id="@+id/LogEmail"
         android:layout_width="373dp"
         android:layout_height="59dp"
+        android:layout_marginTop="46dp"
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/LogPasswordd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.596" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <EditText
-        android:id="@+id/RegPasswordd"
+        android:id="@+id/LogPasswordd"
         android:layout_width="377dp"
         android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
         android:autofillHints="password"
         android:ems="10"
         android:hint="@string/password_hint"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/LogPageBttn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegEmail"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintTop_toBottomOf="@+id/LogEmail" />
 
     <Button
-        android:id="@+id/RegPageBttn"
+        android:id="@+id/LogPageBttn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="160dp"
         android:backgroundTint="#FF8BC34A"
-        android:fontFamily="@font/bebas_neue"
+        android:fontFamily="@font/crushed"
         android:text="REGISTER"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/RegPageLogBttn"
-        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegPasswordd"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="@+id/LogPasswordd" />
 
     <Button
-        android:id="@+id/RegPageLogBttn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="136dp"
+        android:id="@+id/LogPageRegBttn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="54dp"
         android:backgroundTint="#FF8BC34A"
-        android:fontFamily="@font/bebas_neue"
-        android:text="@string/login_page"
+        android:fontFamily="@font/crushed"
+        android:text="Already registered?"
+        android:textColor="#03468B"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegPasswordd"
-        app:layout_constraintVertical_bias="0.208" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.783" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

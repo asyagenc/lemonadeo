@@ -8,6 +8,7 @@
     android:background="#FFDBFFF5"
     tools:context=".firstScreen">
 
+
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="283dp"
@@ -16,76 +17,50 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195"
+        app:layout_constraintVertical_bias="0.228"
         app:srcCompat="@drawable/logo" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/turkishCard"
-        android:layout_width="54dp"
-        android:layout_height="49dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="48dp"
-        android:layout_weight="1"
-        android:elevation="300dp"
-        app:cardCornerRadius="10dp"
+    <ImageView
+        android:id="@+id/uk"
+        android:layout_width="90dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/todo04"
+        android:scaleType="centerCrop"
+        android:src="@drawable/united_kingdom_7501809"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/turkish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <ImageView
+        android:id="@+id/turkish"
+        android:layout_width="90dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/todo04"
+        android:scaleType="centerCrop"
+        android:src="@drawable/turkey_7533613"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:layout_constraintVertical_bias="0.175"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintStart_toEndOf="@+id/uk"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/turkish"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/todo04"
-                android:scaleType="centerCrop"
-                android:src="@drawable/turkey_hires" />
-
-
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/UKCard"
-        android:layout_width="54dp"
-        android:layout_height="49dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="48dp"
-        android:layout_weight="1"
-        android:elevation="300dp"
-        app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="@font/crushed"
+        android:text="Select Language"
+        android:textColor="#E9231B1B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/uk"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:layout_constraintVertical_bias="0.18"
-        tools:ignore="MissingConstraints">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/uk"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/todo04"
-                android:scaleType="centerCrop"
-                android:src="@drawable/uk" />
-
-
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,9 +37,8 @@ public class firstScreen extends AppCompatActivity {
             public void onClick(View v) {
                 setLocale("tr");
                 recreate();
-                Intent intent=new Intent(getApplicationContext(),Register.class);
+                Intent intent = new Intent(firstScreen.this, Register.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -50,7 +49,7 @@ public class firstScreen extends AppCompatActivity {
             public void onClick(View v) {
                 setLocale("en");
                 recreate();
-                Intent intent=new Intent(getApplicationContext(),Register.class);
+                Intent intent = new Intent(firstScreen.this, Register.class);
                 startActivity(intent);
                 finish();
             }

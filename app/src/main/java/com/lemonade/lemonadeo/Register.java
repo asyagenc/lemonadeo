@@ -40,7 +40,7 @@ public class Register extends AppCompatActivity {
         super.onStart();
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
-            Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+            Intent intent = new Intent(Register.this, MainActivity.class);
             startActivity(intent);
             finish();}
     }
@@ -62,9 +62,8 @@ public class Register extends AppCompatActivity {
         LogPageBttn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(), Log.class);
+                Intent intent = new Intent(Register.this, Log.class);
                 startActivity(intent);
-                finish();
 
             }
         });

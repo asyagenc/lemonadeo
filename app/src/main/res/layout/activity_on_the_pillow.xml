@@ -24,8 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#FFC107"
         android:fontFamily="@font/crushed"
         android:text="@string/back__"
@@ -49,9 +49,9 @@
         android:id="@+id/button11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="24dp"
 
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#FFC107"
         android:fontFamily="@font/crushed"
         android:text="@string/next__"

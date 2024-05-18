@@ -18,8 +18,8 @@ public class GoodJob extends AppCompatActivity {
 
     TextView textView;
     TextView textView2;
-    ImageView imageView;
-    ImageView imageView2;
+    ImageView imageView,exit;
+
 
 
 
@@ -37,6 +37,19 @@ public class GoodJob extends AppCompatActivity {
         imageView=findViewById(R.id.imageView6);
         textView=findViewById(R.id.textView10);
         textView2=findViewById(R.id.textView11);
+        exit=findViewById(R.id.imageView8);
+
+
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GoodJob.this, LearningMainMenu.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
 
 
 

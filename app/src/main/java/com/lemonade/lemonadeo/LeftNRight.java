@@ -16,11 +16,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class LeftNRight extends AppCompatActivity {
 
 
-    TextView textView;
-    TextView textView2;
     TextView textView3;
     ImageView imageView;
-    ImageView imageView2;
     Button button;
     Button button2;
 

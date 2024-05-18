@@ -61,7 +61,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/crushed"
                         android:gravity="center"
-                        android:text="Winter"
+                        android:text="Spring"
                         android:textColor="#557AAF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -93,7 +93,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/crushed"
                         android:gravity="center"
-                        android:text="Spring"
+                        android:text="Summer"
                         android:textColor="#557AAF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -125,7 +125,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/crushed"
                         android:gravity="center"
-                        android:text="Summer"
+                        android:text="Autumn"
                         android:textColor="#557AAF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -157,7 +157,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/crushed"
                         android:gravity="center"
-                        android:text="Fall"
+                        android:text="Winter"
                         android:textColor="#557AAF"
                         android:textSize="20sp" />
                 </LinearLayout>

@@ -224,7 +224,7 @@
         android:gravity="center"
         android:text="@string/learn_the_months"
         android:textColor="#D3FF9800"
-        android:textSize="24sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"

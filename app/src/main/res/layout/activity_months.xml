@@ -8,25 +8,11 @@
     tools:context=".Months">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarMonth"
-        android:layout_width="0dp"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginTop="4dp"
-        android:background="#838383"
-        android:elevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="Months Game"
-        app:titleTextColor="@android:color/white" />
-
     <Button
         android:id="@+id/monthBttn3"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="March"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +26,7 @@
         android:id="@+id/monthBttn6"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="June"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,7 +40,7 @@
         android:id="@+id/monthBttn7"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="July"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +54,7 @@
         android:id="@+id/monthBttn11"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="November"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -82,7 +68,7 @@
         android:id="@+id/monthBttn10"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="October"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -92,11 +78,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.769" />
 
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/limonata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
     <Button
         android:id="@+id/monthBttn1"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="January"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -110,7 +107,7 @@
         android:id="@+id/monthBttn12"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="December"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -124,7 +121,7 @@
         android:id="@+id/monthBttn9"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="September"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -132,13 +129,13 @@
         app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.54" />
+        app:layout_constraintVertical_bias="0.546" />
 
     <Button
         android:id="@+id/monthBttn5"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="May"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -152,7 +149,7 @@
         android:id="@+id/monthBttn2"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="February"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -166,7 +163,7 @@
         android:id="@+id/monthBttn8"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="August"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -180,7 +177,7 @@
         android:id="@+id/monthBttn4"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#838383"
+        android:backgroundTint="#FF9800"
         android:fontFamily="@font/bebas_neue"
         android:text="April"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -232,39 +229,34 @@
         app:layout_constraintVertical_bias="0.458" />
 
 
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="307dp"
+        android:layout_height="363dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toTopOf="@+id/monthBttn4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.241"
-        tools:ignore="MissingConstraints">
+        app:srcCompat="@drawable/lemlemboy" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView16"
+        style=""
+        android:layout_width="133dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/crushed"
+        android:gravity="center"
+        android:text="Order the months correct and get the lemonade!"
+        android:textColor="#2A1A1A"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
-            <ImageView
-                android:id="@+id/lemonadeGirlMonth"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.224"
-                app:srcCompat="@drawable/lemonadegirl" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -126,7 +126,7 @@ public class Ball extends AppCompatActivity {
 
     // Countdown timer for 10 seconds
     private void startCountdown() {
-        new CountDownTimer(60000, 1000) {
+        new CountDownTimer(30000, 1000) {
             public void onTick(long millisUntilFinished) {
                 countdownTextView.setText(String.valueOf(millisUntilFinished / 1000));
             }

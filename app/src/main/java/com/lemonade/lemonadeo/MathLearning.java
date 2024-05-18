@@ -24,16 +24,7 @@ public class MathLearning extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_math_learning);
 
-        backMathLearning=findViewById(R.id.backMathLearning);
 
-        backMathLearning.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),LearningMainMenu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

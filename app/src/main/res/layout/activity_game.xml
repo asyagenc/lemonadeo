@@ -55,18 +55,5 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/gameMenuButton"
-        android:layout_width="120dp"
-        android:layout_height="65dp"
-        android:layout_below="@id/backwardButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="#FF8BC34A"
-        android:text="Exit"
-        android:textColor="@color/white"
-        android:fontFamily="@font/crushed"/>
-
-
 
 </RelativeLayout>

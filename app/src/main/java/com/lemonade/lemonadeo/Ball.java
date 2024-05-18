@@ -1,7 +1,7 @@
 package com.lemonade.lemonadeo;
+
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.ViewTreeObserver;
@@ -30,6 +30,9 @@ public class Ball extends AppCompatActivity {
     private int TOP_BOUNDARY;
     private int RIGHT_BOUNDARY;
     private int BOTTOM_BOUNDARY;
+
+    // Flag to indicate whether the countdown has finished
+    private boolean countdownFinished = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,6 +92,11 @@ public class Ball extends AppCompatActivity {
     private float lastY = 0;
 
     void moveBall() {
+        if (countdownFinished) {
+            // Stop moving the ball if countdown is finished
+            return;
+        }
+
         // Get the ball's dimensions
         int ballWidth = ballImageView.getWidth();
         int ballHeight = ballImageView.getHeight();
@@ -116,8 +124,7 @@ public class Ball extends AppCompatActivity {
         ballImageView.postDelayed(this::moveBall, 1000); // Adjust delay as needed
     }
 
-
-    // Countdown timer for 60 seconds
+    // Countdown timer for 10 seconds
     private void startCountdown() {
         new CountDownTimer(60000, 1000) {
             public void onTick(long millisUntilFinished) {
@@ -129,6 +136,7 @@ public class Ball extends AppCompatActivity {
                 countdownTextView.setVisibility(View.GONE);
                 resultTextView.setVisibility(View.VISIBLE); // Show the resultTextView
                 ballImageView.setVisibility(View.GONE); // Hide the ball immediately when countdown finishes
+                countdownFinished = true; // Set the flag to true when countdown finishes
             }
         }.start();
     }

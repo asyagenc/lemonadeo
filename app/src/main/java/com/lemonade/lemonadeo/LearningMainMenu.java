@@ -26,7 +26,7 @@ public class LearningMainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_learning_main_menu);
 
 
-        cardView=findViewById(R.id.daysCardx);
+        cardView=findViewById(R.id.clockCard);
         cardView2=findViewById(R.id.seasonCard);
         cardView3=findViewById(R.id.monthCard);
         cardView4=findViewById(R.id.daysCard);
@@ -38,17 +38,16 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),clockMenuLearn.class);
+                Intent intent = new Intent(LearningMainMenu.this, clockMenuLearn.class);
                 startActivity(intent);
-                finish();}
+            }
         });
 
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),learnSeasons.class);
+                Intent intent = new Intent(LearningMainMenu.this, learnSeasons.class);
                 startActivity(intent);
-                finish();
 
             }
         });
@@ -56,9 +55,8 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),MonthsLearning.class);
+                Intent intent = new Intent(LearningMainMenu.this, MonthsLearning.class);
                 startActivity(intent);
-                finish();
 
             }
         });
@@ -66,9 +64,8 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),learnDays.class);
+                Intent intent = new Intent(LearningMainMenu.this, learnDays.class);
                 startActivity(intent);
-                finish();
 
             }
         });
@@ -78,9 +75,8 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),MathLearning.class);
+                Intent intent = new Intent(LearningMainMenu.this, MathLearning.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -90,9 +86,8 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Directions.class);
+                Intent intent = new Intent(LearningMainMenu.this, Directions.class);
                 startActivity(intent);
-                finish();
             }
         });
 

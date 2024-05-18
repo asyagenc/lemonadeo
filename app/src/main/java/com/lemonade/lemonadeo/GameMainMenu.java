@@ -3,7 +3,6 @@ package com.lemonade.lemonadeo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,7 +25,7 @@ public class GameMainMenu extends AppCompatActivity {
 
 
 
-        cardView=findViewById(R.id.daysCardx);
+        cardView=findViewById(R.id.clockCard);
         cardView2=findViewById(R.id.ballCard);
         cardView3=findViewById(R.id.monthCard);
         cardView4=findViewById(R.id.daysCard);

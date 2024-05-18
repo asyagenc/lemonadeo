@@ -29,10 +29,29 @@
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
 
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/january" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/january" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/crushed"
+                        android:gravity="center"
+                        android:text="January"
+                        android:textColor="#557AAF"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
 
             </androidx.cardview.widget.CardView>
 
@@ -45,10 +64,27 @@
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
 
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/february" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="february"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -61,10 +97,26 @@
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/march" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="march"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -76,11 +128,26 @@
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/april" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="april"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -93,10 +160,26 @@
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/may" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="may"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -107,11 +190,27 @@
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/june" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="june"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+        </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -123,11 +222,27 @@
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/july" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="july"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+            </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -139,11 +254,27 @@
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/august" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="august"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+            </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -155,11 +286,27 @@
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/september" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="september"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+            </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -171,11 +318,26 @@
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/october" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="october"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+            </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -187,11 +349,27 @@
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/november" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="november"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+            </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -203,11 +381,27 @@
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/december" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="december"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+            </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 

@@ -33,6 +33,16 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/monday" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="Monday"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
+
 
             </androidx.cardview.widget.CardView>
 
@@ -49,6 +59,15 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/tuesday" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="tuesday"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
 
             </androidx.cardview.widget.CardView>
 
@@ -65,6 +84,15 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/wednesday" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="wednesday"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
 
             </androidx.cardview.widget.CardView>
 
@@ -81,6 +109,15 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/thursday" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="thursday"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
 
             </androidx.cardview.widget.CardView>
 
@@ -97,6 +134,15 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/friday" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="friday"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
 
             </androidx.cardview.widget.CardView>
 
@@ -112,6 +158,15 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/saturday" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="saturday"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
 
             </androidx.cardview.widget.CardView>
 
@@ -128,6 +183,15 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/sunday" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/crushed"
+                    android:gravity="center"
+                    android:text="sunday"
+                    android:textColor="#557AAF"
+                    android:textSize="20sp" />
 
             </androidx.cardview.widget.CardView>
 

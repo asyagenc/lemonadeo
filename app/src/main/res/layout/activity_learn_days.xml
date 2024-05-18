@@ -28,6 +28,12 @@
                 android:layout_margin="8dp"
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
 
                 <ImageView
                     android:layout_width="150dp"
@@ -42,6 +48,7 @@
                     android:text="Monday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
+                </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
@@ -54,11 +61,19 @@
                 android:layout_margin="8dp"
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
 
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/tuesday" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -68,6 +83,7 @@
                     android:text="tuesday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -79,6 +95,13 @@
                 android:layout_margin="8dp"
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
 
                 <ImageView
                     android:layout_width="150dp"
@@ -93,6 +116,7 @@
                     android:text="wednesday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -104,6 +128,13 @@
                 android:layout_margin="8dp"
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
 
                 <ImageView
                     android:layout_width="150dp"
@@ -118,6 +149,7 @@
                     android:text="thursday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -129,6 +161,13 @@
                 android:layout_margin="8dp"
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
 
                 <ImageView
                     android:layout_width="150dp"
@@ -143,6 +182,8 @@
                     android:text="friday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
+                </LinearLayout>
+
 
             </androidx.cardview.widget.CardView>
 
@@ -153,6 +194,13 @@
                 android:layout_margin="8dp"
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
 
                 <ImageView
                     android:layout_width="150dp"
@@ -167,6 +215,7 @@
                     android:text="saturday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -178,6 +227,13 @@
                 android:layout_margin="8dp"
                 android:elevation="120dp"
                 app:cardCornerRadius="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
 
                 <ImageView
                     android:layout_width="150dp"
@@ -192,6 +248,7 @@
                     android:text="sunday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 

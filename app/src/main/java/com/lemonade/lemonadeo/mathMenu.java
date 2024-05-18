@@ -12,6 +12,7 @@ public class mathMenu extends AppCompatActivity {
     private Button easyButton;
     private Button mediumButton;
     private Button hardButton;
+    private Button gameMenuButton;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -19,12 +20,11 @@ public class mathMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_math_menu);
 
-        // Initialize buttons
         easyButton = findViewById(R.id.easyButton);
         mediumButton = findViewById(R.id.mediumButton);
         hardButton = findViewById(R.id.hardButton);
+        gameMenuButton = findViewById(R.id.gameMenuButton);
 
-        // Set onClickListeners for each button
         easyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +43,14 @@ public class mathMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startGame("Hard");
+            }
+        });
+        gameMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),GameMainMenu.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

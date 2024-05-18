@@ -24,9 +24,7 @@ public class MathLearning extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_math_learning);
 
-        backMathLearning=findViewById(R.id.backBttnMathLearning);
-        Toolbar toolbar = findViewById(R.id.toolbarMathLearning);
-        setSupportActionBar(toolbar);
+        backMathLearning=findViewById(R.id.backMathLearning);
 
         backMathLearning.setOnClickListener(new View.OnClickListener() {
             @Override

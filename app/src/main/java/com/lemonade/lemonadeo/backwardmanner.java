@@ -1,10 +1,10 @@
 package com.lemonade.lemonadeo;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.Gravity;
 import androidx.appcompat.app.AlertDialog;
@@ -15,8 +15,7 @@ public class backwardmanner extends AppCompatActivity {
 
     private TextView numberTextView, timerTextView, questionTextView, scoreTextView;
     private EditText answerEditText;
-    private Button submitAnswerButton;
-    private ImageView imageView;
+    private Button submitAnswerButton,goBackButton;
     private int total_score = 0;
     private int num;
     private int count = 0;
@@ -45,7 +44,7 @@ public class backwardmanner extends AppCompatActivity {
         scoreTextView = findViewById(R.id.scoreTextView);
         answerEditText = findViewById(R.id.answerEditText);
         submitAnswerButton = findViewById(R.id.submitAnswerButton);
-        imageView = findViewById(R.id.imageView);
+        goBackButton = findViewById(R.id.goBackButton);
 
         submitAnswerButton.setOnClickListener(v -> {
             int userAnswer = 0;
@@ -62,6 +61,15 @@ public class backwardmanner extends AppCompatActivity {
                 showAlertDialog("Congratulations! Correct Answer.");
             } else {
                 showAlertDialog("Wrong Answer! Correct Answer was " + reversedNumber);
+            }
+        });
+
+        goBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),game.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -82,7 +90,6 @@ public class backwardmanner extends AppCompatActivity {
         answerEditText.setVisibility(View.GONE);
         submitAnswerButton.setVisibility(View.GONE);
         numberTextView.setVisibility(View.VISIBLE);
-        imageView.setVisibility(View.VISIBLE);
 
         new CountDownTimer(6000, 1000) {
             public void onTick(long millisUntilFinished) {
@@ -94,6 +101,7 @@ public class backwardmanner extends AppCompatActivity {
                 numberTextView.setVisibility(View.GONE);
                 answerEditText.setVisibility(View.VISIBLE);
                 submitAnswerButton.setVisibility(View.VISIBLE);
+                goBackButton.setVisibility(View.VISIBLE);
                 timerTextView.setText("Enter your answer in reversed order:");
             }
         }.start();

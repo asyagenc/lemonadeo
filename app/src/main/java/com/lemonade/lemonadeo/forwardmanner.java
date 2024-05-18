@@ -1,5 +1,6 @@
 package com.lemonade.lemonadeo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -15,7 +16,7 @@ public class forwardmanner extends AppCompatActivity {
 
     private TextView numberTextView,timerTextView,questionTextView,scoreTextView;
     private EditText answerEditText;
-    private Button submitAnswerButton;
+    private Button submitAnswerButton,goBackButton;
     private int total_score = 0;
     private int num;
     private int count = 0;
@@ -47,6 +48,9 @@ public class forwardmanner extends AppCompatActivity {
         scoreTextView = findViewById(R.id.scoreTextView);
         answerEditText = findViewById(R.id.answerEditText);
         submitAnswerButton = findViewById(R.id.submitAnswerButton);
+        goBackButton = findViewById(R.id.goBackButton);
+
+
 
         submitAnswerButton.setOnClickListener(v -> {
             int answer = 0;
@@ -60,6 +64,15 @@ public class forwardmanner extends AppCompatActivity {
                 showAlertDialog("Congrulations! Correct Answer.");
             } else {
                 showAlertDialog("Wrong Answer! Correct Answer was " + num);
+            }
+        });
+
+        goBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),game.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -91,6 +104,7 @@ public class forwardmanner extends AppCompatActivity {
                 numberTextView.setVisibility(View.GONE);
                 answerEditText.setVisibility(View.VISIBLE);
                 submitAnswerButton.setVisibility(View.VISIBLE);
+                goBackButton.setVisibility(View.VISIBLE);
                 timerTextView.setText("Enter your answer in correct order:");
             }
         }.start();

@@ -1,6 +1,7 @@
 package com.lemonade.lemonadeo;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,8 +16,7 @@ public class multiplication extends AppCompatActivity {
 
     private TextView numberTextView,questionTextView,scoreTextView,resultTextView;
     private EditText answerEditText;
-    private Button submitAnswerButton;
-
+    private Button submitAnswerButton,goBackButton;
     private ImageView imageView;
     private int total_score = 0;
     private int num1,num2;
@@ -37,11 +37,11 @@ public class multiplication extends AppCompatActivity {
         }
         else if("Medium".equals(difficulty)){
             min = 10;
-            max = 50;
+            max = 25;
         }
         else if("Hard".equals(difficulty)){
-            min = 50;
-            max = 100;
+            min = 25;
+            max = 50;
         }
 
         numberTextView = findViewById(R.id.numberTextView);
@@ -51,6 +51,16 @@ public class multiplication extends AppCompatActivity {
         submitAnswerButton = findViewById(R.id.submitAnswerButton);
         resultTextView = findViewById(R.id.resultTextView);
         imageView = findViewById(R.id.imageView);
+        goBackButton = findViewById(R.id.goBackButton);
+
+        goBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),mathMenu.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         submitAnswerButton.setOnClickListener(v -> {
             int answer = 0;

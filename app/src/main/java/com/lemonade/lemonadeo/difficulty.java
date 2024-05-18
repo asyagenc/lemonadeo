@@ -16,20 +16,12 @@ public class difficulty extends Activity {
         Button easyButton = findViewById(R.id.easyButton);
         Button mediumButton = findViewById(R.id.mediumButton);
         Button hardButton = findViewById(R.id.hardButton);
-        Button goBackButton = findViewById(R.id.goBackButton);
 
         easyButton.setOnClickListener(v -> startGame(gameMode,  "Easy"));
         mediumButton.setOnClickListener(v -> startGame(gameMode, "Medium"));
         hardButton.setOnClickListener(v -> startGame(gameMode, "Hard"));
 
-        goBackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),game.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
 
     }
 

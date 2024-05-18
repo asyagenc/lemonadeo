@@ -56,18 +56,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mediumButton" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/goBackButton"
-        android:layout_width="120dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="56dp"
-        android:backgroundTint="#FF8BC34A"
-        android:text="Go Back"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/hardButton" />
-
     <TextView
         android:id="@+id/difficultyTextView"
         android:layout_width="wrap_content"

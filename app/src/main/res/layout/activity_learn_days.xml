@@ -9,12 +9,13 @@
     tools:context=".learnDays">
 
     <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:scrollbars="none"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:id="@+id/horizontalScrollView"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -26,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:elevation="120dp"
+                android:elevation="8dp"
                 app:cardCornerRadius="20dp">
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -59,7 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:elevation="120dp"
+                android:elevation="8dp"
                 app:cardCornerRadius="20dp">
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -93,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:elevation="120dp"
+                android:elevation="8dp"
                 app:cardCornerRadius="20dp">
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -126,7 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:elevation="120dp"
+                android:elevation="8dp"
                 app:cardCornerRadius="20dp">
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -159,7 +160,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:elevation="120dp"
+                android:elevation="8dp"
                 app:cardCornerRadius="20dp">
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -192,7 +193,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:elevation="120dp"
+                android:elevation="8dp"
                 app:cardCornerRadius="20dp">
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -225,7 +226,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:elevation="120dp"
+                android:elevation="8dp"
                 app:cardCornerRadius="20dp">
                 <LinearLayout
                     android:layout_width="wrap_content"

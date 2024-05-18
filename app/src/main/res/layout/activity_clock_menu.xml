@@ -9,112 +9,98 @@
     android:backgroundTint="#FFDBFFF5"
     tools:context=".clockMenu">
 
+    <!-- Guideline to help center the card views -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical" />
 
+    <!-- CardView for Analog Clock -->
     <androidx.cardview.widget.CardView
         android:id="@+id/analogCard"
-        android:layout_width="167dp"
-        android:layout_height="162dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_margin="10dp"
-        android:layout_weight="1"
         android:elevation="300dp"
-        app:cardCornerRadius="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-            <ImageButton
-                android:id="@+id/analogOption"
-                android:layout_width="157dp"
-                android:layout_height="131dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="27dp"
-                android:scaleType="centerCrop"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@drawable/time"
-                tools:layout_editor_absoluteY="78dp" />
+            android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/analogName"
+                android:id="@+id/clockName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/analogOption"
+                android:layout_below="@+id/clockImageViewx"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/crushed"
+                android:text="@string/analog"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/clockImageViewx"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:contentDescription="@string/todo9"
+                android:src="@drawable/time" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Digital Clock -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/digitalCard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:elevation="300dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ballName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ballImageView"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/crushed"
                 android:gravity="center"
-                android:text="@string/analog_clock_game"
+                android:text="digital"
                 android:textSize="20sp" />
 
-
+            <ImageView
+                android:id="@+id/ballImageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:contentDescription="@string/todoi"
+                android:src="@drawable/clock_2787676" />
         </RelativeLayout>
-
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/digitalCard"
-        android:layout_width="167dp"
-        android:layout_height="162dp"
-        android:layout_margin="10dp"
-        android:layout_weight="1"
-        android:elevation="300dp"
-        app:cardCornerRadius="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.893"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394"
-        tools:ignore="MissingConstraints">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-            <ImageButton
-                android:id="@+id/digitalOption"
-                android:layout_width="147dp"
-                android:layout_height="132dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="37dp"
-                android:scaleType="centerCrop"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@drawable/digitaloption"
-                tools:layout_editor_absoluteY="78dp" />
-
-            <TextView
-                android:id="@+id/digitalName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/digitalOption"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginEnd="16dp"
-                android:fontFamily="@font/crushed"
-                android:gravity="center"
-                android:text="@string/digital_clock_game"
-                android:textSize="20sp" />
-
-
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
+    <!-- TextView for title -->
     <TextView
         android:id="@+id/clockMenu"
         android:layout_width="wrap_content"
@@ -123,9 +109,8 @@
         android:fontFamily="@font/bebas_neue"
         android:text="Choose"
         android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/analogCard"
+        app:layout_constraintBottom_toTopOf="@id/analogCard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

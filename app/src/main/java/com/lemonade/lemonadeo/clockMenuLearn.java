@@ -21,8 +21,8 @@ public class clockMenuLearn extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_clock_menu_learn);
 
-        analog=findViewById(R.id.analogCardLearn);
-        digital=findViewById(R.id.digitalCardLearn);
+        analog=findViewById(R.id.analogCard);
+        digital=findViewById(R.id.digitalCard);
 
         analog.setOnClickListener(new View.OnClickListener() {
             @Override

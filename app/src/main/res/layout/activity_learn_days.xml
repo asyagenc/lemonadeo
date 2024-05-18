@@ -265,7 +265,7 @@
         android:layout_marginTop="72dp"
         android:fontFamily="@font/crushed"
         android:gravity="center"
-        android:text="@string/days_of_the_week"
+        android:text="Learn the Days of the Week"
         android:textColor="#D3FF9800"
         android:textSize="34sp"
         android:textStyle="bold"

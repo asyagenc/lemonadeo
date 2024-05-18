@@ -15,7 +15,7 @@
         android:layout_marginTop="72dp"
         android:fontFamily="@font/crushed"
         android:gravity="center"
-        android:text="@string/seasons_of_the_year"
+        android:text="Learn the Seasons"
         android:textColor="#D3FF9800"
         android:textSize="34sp"
         android:textStyle="bold"

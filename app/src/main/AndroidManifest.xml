@@ -105,6 +105,11 @@
         <activity
             android:name=".clockMenuLearn"
             android:exported="false" />
+
+        <activity android:name=".clockMenu"
+        android:exported="false">
+        </activity>
+
         <activity
             android:name=".Days"
             android:exported="false" />

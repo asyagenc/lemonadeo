@@ -22,9 +22,8 @@
             android:id="@+id/lemonade"
             android:layout_width="0dp"
             android:layout_height="42dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginBottom="90dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="250dp"
             android:contentDescription="@string/lemonade_description"
             android:fontFamily="@font/crushed"
             android:gravity="center"
@@ -32,8 +31,6 @@
             android:textColor="#FF9800"
             android:textSize="45sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/row1"
-            app:layout_constraintEnd_toStartOf="@+id/logo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,7 +38,7 @@
             android:id="@+id/logo"
             android:layout_width="0dp"
             android:layout_height="160dp"
-            android:layout_marginTop="76dp"
+            android:layout_marginTop="148dp"
             android:layout_marginEnd="16dp"
             android:contentDescription="@string/todoaa"
             android:src="@drawable/logo"
@@ -51,120 +48,121 @@
 
         <ImageButton
             android:id="@+id/logOutBtn"
-            android:layout_width="46dp"
-            android:layout_height="45dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginBottom="79dp"
             android:backgroundTint="#FFDBFFF5"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toTopOf="@+id/lemonade"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.958"
+            app:layout_constraintHorizontal_bias="0.923"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/logout"
+            app:layout_constraintVertical_bias="0.293"
+            app:srcCompat="@drawable/artboard_6"
             tools:ignore="MissingConstraints" />
-
-        <LinearLayout
-            android:id="@+id/row1"
-            android:layout_width="0dp"
-            android:layout_height="175dp"
-            android:layout_marginTop="4dp"
-            android:orientation="horizontal"
-            android:padding="10dp"
-
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logo">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/learningCard"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:elevation="80dp"
-                android:focusable="true"
-                app:cardCornerRadius="20dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/learningName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/learningImage"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/crushed"
-                        android:text="@string/learning"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:id="@+id/learningImage"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="15dp"
-                        android:contentDescription="@string/Todos"
-                        android:src="@drawable/learn" />
-
-
-                </RelativeLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/gamingCard"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:elevation="80dp"
-                android:focusable="true"
-                app:cardCornerRadius="20dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/gamingName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/gamingImage"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/crushed"
-                        android:text="@string/gaming"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:id="@+id/gamingImage"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="15dp"
-                        android:contentDescription="@string/todoss"
-                        android:src="@drawable/gamegame" />
-
-
-                </RelativeLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-
-        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="387dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginBottom="136dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/learningCard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:elevation="80dp"
+            android:focusable="true"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/learningName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/learningImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/crushed"
+                    android:text="@string/learning"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/learningImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/Todos"
+                    android:src="@drawable/learn" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/gamingCard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:elevation="80dp"
+            android:focusable="true"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/gamingName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gamingImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/crushed"
+                    android:text="@string/gaming"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/gamingImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/todoss"
+                    android:src="@drawable/gamegame" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

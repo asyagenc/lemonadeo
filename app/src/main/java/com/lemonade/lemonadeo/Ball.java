@@ -1,5 +1,6 @@
 package com.lemonade.lemonadeo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.DisplayMetrics;
@@ -19,9 +20,10 @@ import java.util.Random;
 
 public class Ball extends AppCompatActivity {
 
-    ImageView ballImageView, backgroundImage;
+    ImageView ballImageView, backgroundImage,close;
     TextView countdownTextView, resultTextView;
     Random random;
+
     int backgroundImageWidth, backgroundImageHeight;
     int screenWidth, screenHeight;
 
@@ -44,6 +46,18 @@ public class Ball extends AppCompatActivity {
         countdownTextView = findViewById(R.id.countdownBall);
         resultTextView = findViewById(R.id.resultBall);
         random = new Random();
+        close=findViewById(R.id.close);
+
+        close.setVisibility(View.GONE);
+
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Ball.this, GameMainMenu.class);
+                startActivity(intent);
+            }
+        });
 
         // Get screen dimensions
         DisplayMetrics displayMetrics = new DisplayMetrics();
@@ -134,6 +148,7 @@ public class Ball extends AppCompatActivity {
             public void onFinish() {
                 countdownTextView.setText("0");
                 countdownTextView.setVisibility(View.GONE);
+                close.setVisibility(View.VISIBLE);
                 resultTextView.setVisibility(View.VISIBLE); // Show the resultTextView
                 ballImageView.setVisibility(View.GONE); // Hide the ball immediately when countdown finishes
                 countdownFinished = true; // Set the flag to true when countdown finishes

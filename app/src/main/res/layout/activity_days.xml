@@ -13,88 +13,74 @@
         android:id="@+id/dayBttn1"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="76dp"
         android:backgroundTint="#FF9800"
         android:fontFamily="@font/crushed"
         android:text="@string/monday__"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dayBttn4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
     <Button
         android:id="@+id/dayBttn2"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="252dp"
+        android:layout_marginBottom="243dp"
         android:backgroundTint="#FF9800"
         android:fontFamily="@font/crushed"
         android:text="@string/tuesday__"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/dayBttn1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dayBttn3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/dayBttn3"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="10dp"
         android:backgroundTint="#FF9800"
         android:fontFamily="@font/crushed"
+        app:layout_constraintBottom_toTopOf="@+id/dayBttn2"
         android:text="@string/wednesday__"
-        app:layout_constraintBottom_toTopOf="@+id/dayBttn6"
-        app:layout_constraintEnd_toStartOf="@+id/dayBttn4"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="311dp" />
 
     <Button
         android:id="@+id/dayBttn4"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="9dp"
         android:backgroundTint="#FF9800"
         android:fontFamily="@font/crushed"
         android:text="@string/thursday__"
-        app:layout_constraintBottom_toTopOf="@+id/dayBttn2"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/dayBttn1"
+        app:layout_constraintEnd_toEndOf="@+id/dayBttn5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/dayBttn5"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="15dp"
         android:backgroundTint="#FF9800"
         android:fontFamily="@font/crushed"
         android:text="@string/friday__"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/dayBttn4"
-        app:layout_constraintTop_toTopOf="@+id/dayBttn4" />
+        app:layout_constraintBottom_toTopOf="@+id/dayBttn6"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/dayBttn6"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="242dp"
         android:backgroundTint="#FF9800"
         android:fontFamily="@font/crushed"
         android:text="@string/saturday__"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/dayBttn1"
-        app:layout_constraintTop_toBottomOf="@+id/dayBttn5" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <Button
         android:id="@+id/dayBttn7"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:backgroundTint="#FF9800"
         android:fontFamily="@font/crushed"
         android:text="@string/sunday__"
@@ -103,38 +89,33 @@
         app:layout_constraintTop_toBottomOf="@+id/dayBttn1" />
 
 
-    <pl.droidsonroids.gif.GifImageView
+      <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gif"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="48dp"
         android:src="@drawable/limonata"
-        app:layout_constraintEnd_toEndOf="@+id/dayBttn5"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="@+id/dayBttn3"
-        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+        tools:layout_editor_absoluteY="48dp" />
 
     <Button
         android:id="@+id/shuffleBttn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="79dp"
         android:backgroundTint="#FF8BC34A"
         android:fontFamily="@font/crushed"
-        android:text="@string/shuffle__"
+        android:text="Try Again"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dayBttn7"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="307dp"
         android:layout_height="363dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginEnd="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/dayBttn4"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/dayBttn3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/lemlemboy" />
@@ -144,8 +125,7 @@
         style=""
         android:layout_width="142dp"
         android:layout_height="63dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="204dp"
         android:fontFamily="@font/crushed"
         android:gravity="center"
         android:text="@string/order_the_days_of_the_week_correct_and_get_the_lemonade"
@@ -154,7 +134,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView11"
         app:layout_constraintEnd_toEndOf="@+id/imageView11"
-        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintHorizontal_bias="0.715"
         app:layout_constraintStart_toStartOf="@+id/imageView11" />
 
     <TextView
@@ -162,13 +142,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="400dp"
         android:fontFamily="@font/crushed"
         android:text="@string/textview___"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dayBttn7" />
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView17"
@@ -176,10 +157,9 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/crushed"
         android:text="@string/textview____"
+        app:layout_constraintBottom_toTopOf="@+id/shuffleBttn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -17,6 +18,7 @@ public class ResultActivity extends AppCompatActivity {
 
 
     Button button2;
+    ImageView close;
 
 
     @Override
@@ -30,6 +32,7 @@ public class ResultActivity extends AppCompatActivity {
         mediaPlayer.start();
 
         button2=findViewById(R.id.buttonTA);
+        close=findViewById(R.id.close);
 
 
 
@@ -37,6 +40,15 @@ public class ResultActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ResultActivity.this, similarPics.class);
+                startActivity(intent);
+            }
+        });
+
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ResultActivity.this, GameMainMenu.class);
                 startActivity(intent);
             }
         });

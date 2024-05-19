@@ -1,9 +1,12 @@
 package com.lemonade.lemonadeo;
 
 import android.content.Intent;
+import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +16,7 @@ public class spellResult extends AppCompatActivity {
 
 
     Button button2;
+    ImageView close;
 
 
     @Override
@@ -26,6 +30,15 @@ public class spellResult extends AppCompatActivity {
         mediaPlayer.start();
 
         button2=findViewById(R.id.buttonTA);
+        close=findViewById(R.id.close);
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(spellResult.this, GameMainMenu.class);
+                startActivity(intent);
+            }
+        });
 
 
 
@@ -35,6 +48,8 @@ public class spellResult extends AppCompatActivity {
             Intent intent = new Intent(spellResult.this, spelling.class);
             startActivity(intent);
         });
+
+
 
 
         int score = getIntent().getIntExtra("SCORE", 0);

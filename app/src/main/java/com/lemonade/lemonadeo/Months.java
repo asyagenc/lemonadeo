@@ -63,7 +63,7 @@ public class Months extends AppCompatActivity {
         otherButtons[10] = findViewById(R.id.monthBttn11);
         otherButtons[11] = findViewById(R.id.monthBttn12);
         message = findViewById(R.id.txtVieww);
-        boyBubble=findViewById(R.id.textView16);
+        boyBubble=findViewById(R.id.bubble);
         text=findViewById(R.id.textView17);
         gifImageView.setImageResource(View.GONE);
         message.setVisibility(View.GONE);
@@ -92,8 +92,12 @@ public class Months extends AppCompatActivity {
 
                 for (int i = 0; i <12; i++) {
                     otherButtons[i].setEnabled(true);
-                    otherButtons[i].setBackgroundColor(Color.parseColor("#838383"));
+                    otherButtons[i].setBackgroundColor(Color.parseColor("#FF9800"));
                 }
+                for (Button button : otherButtons) {
+                    button.setVisibility(View.VISIBLE);
+                }
+
 
                 for (int j = 0; j < 12; j++) {
                     Random random = new Random();
@@ -116,25 +120,29 @@ public class Months extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (currentMonth[0] == 1 && otherButtons[buttonIndex].getText().equals("January")) {
-                        message.setText("Press for next month");
+                        text.setText("Press for next month");
+                        text.setVisibility(View.VISIBLE);
                         correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
                         currentMonth[0] = 2;
                     } else if (currentMonth[0] == 2 && otherButtons[buttonIndex].getText().equals("February")) {
-                        message.setText("Press for next month");
+                        text.setText("Press for next month");
+                        text.setVisibility(View.VISIBLE);
                         correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
                         currentMonth[0] = 3;
                     } else if (currentMonth[0] == 3 && otherButtons[buttonIndex].getText().equals("March")) {
-                        message.setText("Press for next month");
+                        text.setText("Press for next month");
+                        text.setVisibility(View.VISIBLE);
                         correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
                         currentMonth[0] = 4;
                     } else if (currentMonth[0] == 4 && otherButtons[buttonIndex].getText().equals("April")) {
-                        message.setText("Press for next month");
+                        text.setText("Press for next month");
+                        text.setVisibility(View.VISIBLE);
                         correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
@@ -142,7 +150,8 @@ public class Months extends AppCompatActivity {
                     }
 
                     else if (currentMonth[0] == 5 && otherButtons[buttonIndex].getText().equals("May")) {
-                        message.setText("Press for next month");
+                        text.setText("Press for next month");
+                        text.setVisibility(View.VISIBLE);
                         correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
@@ -150,7 +159,8 @@ public class Months extends AppCompatActivity {
                     }
 
                     else if (currentMonth[0] == 6 && otherButtons[buttonIndex].getText().equals("June")) {
-                        message.setText("Press for next month");
+                        text.setText("Press for next month");
+                        text.setVisibility(View.VISIBLE);
                         correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
@@ -158,14 +168,16 @@ public class Months extends AppCompatActivity {
                     }
 
                     else if (currentMonth[0] == 7 && otherButtons[buttonIndex].getText().equals("July")) {
-                        message.setText("Press for next month");
+                        text.setText("Press for next month");
+                        text.setVisibility(View.VISIBLE);
                         correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
                         currentMonth[0] = 8;
                     }
                     else if (currentMonth[0] == 8 && otherButtons[buttonIndex].getText().equals("August")) {
-                        message.setText("Press for next month");
+                        text.setText("Press for next month");
+                        text.setVisibility(View.VISIBLE);
                         correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
@@ -173,7 +185,8 @@ public class Months extends AppCompatActivity {
 
                     }
                     else if (currentMonth[0] == 9 && otherButtons[buttonIndex].getText().equals("September")) {
-                        message.setText("Press for next month");
+                        text.setText("Press for next month");
+                        text.setVisibility(View.VISIBLE);
                         correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
@@ -182,7 +195,8 @@ public class Months extends AppCompatActivity {
                     }
 
                     else if (currentMonth[0] == 10 && otherButtons[buttonIndex].getText().equals("October")) {
-                        message.setText("Press for next month");
+                        text.setText("Press for next month");
+                        text.setVisibility(View.VISIBLE);
                         correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
@@ -191,7 +205,8 @@ public class Months extends AppCompatActivity {
                     }
 
                     else if (currentMonth[0] == 11 && otherButtons[buttonIndex].getText().equals("November")) {
-                        message.setText("Press for next month");
+                        text.setText("Press for next month");
+                        text.setVisibility(View.VISIBLE);
                         correctMonths.start();
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);

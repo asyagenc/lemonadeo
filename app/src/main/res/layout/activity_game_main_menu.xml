@@ -149,7 +149,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/crushed"
-                            android:text="months game"
+                            android:text="@string/months_game"
                             android:textSize="20sp" />
 
                         <ImageView
@@ -244,7 +244,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/crushed"
-                            android:text="spelling game"
+                            android:text="@string/spelling_game"
                             android:textSize="20sp" />
 
                         <ImageView
@@ -282,7 +282,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/crushed"
-                            android:text="multiplication game"
+                            android:text="@string/multiplication_game"
                             android:textSize="20sp" />
 
                         <ImageView
@@ -336,7 +336,7 @@
                             android:layout_marginTop="8dp"
                             android:fontFamily="@font/crushed"
                             android:gravity="center"
-                            android:text="Memory Game"
+                            android:text="@string/memory_game"
                             android:textSize="20sp" />
 
                         <ImageView
@@ -375,7 +375,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/crushed"
-                            android:text="similar picture game"
+                            android:text="@string/similar_picture_game"
                             android:textSize="20sp" />
 
                         <ImageView

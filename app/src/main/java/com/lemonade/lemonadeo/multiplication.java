@@ -16,7 +16,7 @@ public class multiplication extends AppCompatActivity {
 
     private TextView numberTextView,questionTextView,scoreTextView,resultTextView;
     private EditText answerEditText;
-    private Button submitAnswerButton,goBackButton;
+    private Button submitAnswerButton;
     private ImageView imageView;
     private int total_score = 0;
     private int num1,num2;
@@ -51,16 +51,8 @@ public class multiplication extends AppCompatActivity {
         submitAnswerButton = findViewById(R.id.submitAnswerButton);
         resultTextView = findViewById(R.id.resultTextView);
         imageView = findViewById(R.id.imageView);
-        goBackButton = findViewById(R.id.goBackButton);
 
-        goBackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),mathMenu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        
 
         submitAnswerButton.setOnClickListener(v -> {
             int answer = 0;

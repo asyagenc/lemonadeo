@@ -5,6 +5,7 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.Gravity;
 import androidx.appcompat.app.AlertDialog;
@@ -15,7 +16,8 @@ public class backwardmanner extends AppCompatActivity {
 
     private TextView numberTextView, timerTextView, questionTextView, scoreTextView;
     private EditText answerEditText;
-    private Button submitAnswerButton,goBackButton;
+    private ImageView imageView;
+    private Button submitAnswerButton;
     private int total_score = 0;
     private int num;
     private int count = 0;
@@ -44,7 +46,7 @@ public class backwardmanner extends AppCompatActivity {
         scoreTextView = findViewById(R.id.scoreTextView);
         answerEditText = findViewById(R.id.answerEditText);
         submitAnswerButton = findViewById(R.id.submitAnswerButton);
-        goBackButton = findViewById(R.id.goBackButton);
+        imageView = findViewById(R.id.imageView15);
 
         submitAnswerButton.setOnClickListener(v -> {
             int userAnswer = 0;
@@ -64,7 +66,7 @@ public class backwardmanner extends AppCompatActivity {
             }
         });
 
-        goBackButton.setOnClickListener(new View.OnClickListener() {
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),game.class);
@@ -101,7 +103,6 @@ public class backwardmanner extends AppCompatActivity {
                 numberTextView.setVisibility(View.GONE);
                 answerEditText.setVisibility(View.VISIBLE);
                 submitAnswerButton.setVisibility(View.VISIBLE);
-                goBackButton.setVisibility(View.VISIBLE);
                 timerTextView.setText("Enter your answer in reversed order:");
             }
         }.start();

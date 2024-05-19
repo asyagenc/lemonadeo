@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFDBFFF5"
@@ -57,18 +58,6 @@
         android:text="Submit Your Answer"
         android:visibility="gone" />
 
-    <Button
-        android:id="@+id/goBackButton"
-        android:layout_width="120dp"
-        android:layout_height="65dp"
-        android:layout_below="@id/submitAnswerButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="#FF8BC34A"
-        android:fontFamily="@font/crushed"
-        android:text="Quit"
-        android:textSize="24sp"/>
-
     <TextView
         android:id="@+id/scoreTextView"
         android:layout_width="wrap_content"
@@ -78,4 +67,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="244dp"
         android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="40dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="320dp"
+        app:srcCompat="@drawable/_close_" />
+
+
 </RelativeLayout>

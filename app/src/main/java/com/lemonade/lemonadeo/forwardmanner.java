@@ -6,6 +6,7 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.Gravity;
 import androidx.appcompat.app.AlertDialog;
@@ -16,11 +17,12 @@ public class forwardmanner extends AppCompatActivity {
 
     private TextView numberTextView,timerTextView,questionTextView,scoreTextView;
     private EditText answerEditText;
-    private Button submitAnswerButton,goBackButton;
+    private Button submitAnswerButton;
     private int total_score = 0;
     private int num;
     private int count = 0;
     private int min,max;
+    private ImageView imageView;
 
 
     @Override
@@ -48,7 +50,7 @@ public class forwardmanner extends AppCompatActivity {
         scoreTextView = findViewById(R.id.scoreTextView);
         answerEditText = findViewById(R.id.answerEditText);
         submitAnswerButton = findViewById(R.id.submitAnswerButton);
-        goBackButton = findViewById(R.id.goBackButton);
+        imageView= findViewById(R.id.imageView10);
 
 
 
@@ -67,7 +69,7 @@ public class forwardmanner extends AppCompatActivity {
             }
         });
 
-        goBackButton.setOnClickListener(new View.OnClickListener() {
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),game.class);
@@ -104,7 +106,6 @@ public class forwardmanner extends AppCompatActivity {
                 numberTextView.setVisibility(View.GONE);
                 answerEditText.setVisibility(View.VISIBLE);
                 submitAnswerButton.setVisibility(View.VISIBLE);
-                goBackButton.setVisibility(View.VISIBLE);
                 timerTextView.setText("Enter your answer in correct order:");
             }
         }.start();

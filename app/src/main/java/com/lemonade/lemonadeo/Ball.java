@@ -54,8 +54,9 @@ public class Ball extends AppCompatActivity {
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Ball.this, GameMainMenu.class);
+                Intent intent= new Intent(getApplicationContext(),GameMainMenu.class);
                 startActivity(intent);
+                finish();
             }
         });
 

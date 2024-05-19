@@ -33,12 +33,13 @@ public class spellResult extends AppCompatActivity {
         close=findViewById(R.id.close);
 
         close.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(spellResult.this, GameMainMenu.class);
-                startActivity(intent);
-            }
-        });
+                @Override
+                public void onClick(View v) {
+                    Intent intent= new Intent(getApplicationContext(),GameMainMenu.class);
+                    startActivity(intent);
+                    finish();
+                }
+            });
 
 
 

@@ -48,8 +48,9 @@ public class ResultActivity extends AppCompatActivity {
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResultActivity.this, GameMainMenu.class);
+                Intent intent= new Intent(getApplicationContext(),GameMainMenu.class);
                 startActivity(intent);
+                finish();
             }
         });
 

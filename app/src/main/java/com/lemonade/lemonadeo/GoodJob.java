@@ -41,14 +41,13 @@ public class GoodJob extends AppCompatActivity {
 
 
         exit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(GoodJob.this, LearningMainMenu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
+                @Override
+                public void onClick(View v) {
+                    Intent intent= new Intent(getApplicationContext(),GameMainMenu.class);
+                    startActivity(intent);
+                    finish();
+                }
+            });
 
 
 

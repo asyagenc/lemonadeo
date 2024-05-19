@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Limonata</string>
+    <string name="app_name">Lemonade</string>
     <string name="first_fragment_label">İlk Fragman</string>
     <string name="second_fragment_label">İkinci Fragman</string>
     <string name="next">İleri</string>
     <string name="previous">Geri</string>
 
-    <string name="lemonade_description">Limonata oyununun başlığıdır</string>
+    <string name="lemonade_description">Lemonade oyununun başlığıdır</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
     <string name="login">Giriş</string>
     <string name="emailx">E-posta</string>
@@ -104,7 +104,7 @@
     <string name="seasons">mevsimler</string>
     <string name="todor">YAPILACAKLAR</string>
     <string name="seasonss">mevsimler</string>
-    <string name="lemonade">Limonata</string>
+    <string name="lemonade">Lemonade</string>
     <string name="todoss">YAPILACAKLAR</string>
     <string name="gaming">oyun</string>
     <string name="Todos">YAPILACAKLAR</string>
@@ -204,6 +204,84 @@
     <string name="medium_">ORTA</string>
     <string name="hard_">Zor</string>
     <string name="submit_your_answer">Cevabınızı Gönderin</string>
-
+        <string name="oh_i_saw_her_she_is_behind_the_box_now">Oh! Onu gördüm, şimdi kutunun arkasında.</string>
+        <string name="where_is_she">O nerede?</string>
+        <string name="choose">Seç</string>
+        <string name="score">Puan</string>
+        <string name="result">Sonuç</string>
+        <string name="this_is_my_chicken_penny_she_can_be_really_naughty_can_you_help_me_find_her">Bu benim tavuk Penny. O gerçekten yaramaz olabiliyor, onu bulmama yardım eder misin?</string>
+        <string name="months_game">Aylar oyunu</string>
+        <string name="spelling_game">Heceleme oyunu</string>
+        <string name="multiplication_game">Çarpma oyunu</string>
+        <string name="memory_game">Hafıza oyunu</string>
+        <string name="similar_picture_game">Benzer resim oyunu</string>
+        <string name="thanks_for_helping_me_with_penny_she_is_really_hard_to_find">Penny ile bana yardım ettiğiniz için teşekkürler. Onu bulmak gerçekten zor.</string>
+        <string name="where_is_penny">Penny nerede?</string>
+        <string name="she_is_in_front_of_the_box">O kutunun önünde.</string>
+        <string name="monday">Pazartesi</string>
+        <string name="tuesday">Salı</string>
+        <string name="thursday">Perşembe</string>
+        <string name="wednesday">Çarşamba</string>
+        <string name="friday">Cuma</string>
+        <string name="saturday">Cumartesi</string>
+        <string name="sunday">Pazar</string>
+        <string name="click_for_the_sound">Ses için tıklayın.</string>
+        <string name="learn_the_days_of_the_week">Haftanın Günlerini Öğrenin</string>
+        <string name="learn_the_seasons">Mevsimleri Öğrenin</string>
+        <string name="spring">İlkbahar</string>
+        <string name="summer">Yaz</string>
+        <string name="autumn">Sonbahar</string>
+        <string name="winter">Kış</string>
+        <string name="click_for_the_sound_">Ses için tıklayın.</string>
+        <string name="can_you_see_her_she_is_among_all_the_other_chickens">Onu görebiliyor musun? Diğer tavukların arasında.</string>
+        <string name="e_mail_">E-posta</string>
+        <string name="login__">GİRİŞ YAP</string>
+        <string name="haven_t_registered_yet">Henüz kayıt olmadınız mı?</string>
+        <string name="select_difficulty__">ZORLUK SEÇİN:</string>
+        <string name="hard__">Zor</string>
+        <string name="medium__">Orta</string>
+        <string name="easy__">Kolay</string>
+        <string name="march">Mart</string>
+        <string name="june">Haziran</string>
+        <string name="july">Temmuz</string>
+        <string name="november">Kasım</string>
+        <string name="october">Ekim</string>
+        <string name="january">Ocak</string>
+        <string name="december">Aralık</string>
+        <string name="september">Eylül</string>
+        <string name="may">Mayıs</string>
+        <string name="february">Şubat</string>
+        <string name="august">Ağustos</string>
+        <string name="april">Nisan</string>
+        <string name="shuffle">Karıştır</string>
+        <string name="order_the_months_correct_and_get_the_lemonade">Ayları doğru sıraya koyun ve limonatayı alın!</string>
+        <string name="january_">Ocak</string>
+        <string name="february_">Şubat</string>
+        <string name="march_">Mart</string>
+        <string name="april_">Nisan</string>
+        <string name="click_for_the_sound__">Ses için tıklayın.</string>
+        <string name="december_">Aralık</string>
+        <string name="november_">Kasım</string>
+        <string name="october_">Ekim</string>
+        <string name="september_">Eylül</string>
+        <string name="august_">Ağustos</string>
+        <string name="july_">Temmuz</string>
+        <string name="june_">Haziran</string>
+        <string name="may_">Mayıs</string>
+        <string name="submit_your_answer_">Cevabınızı Gönderin</string>
+        <string name="right_she_is_on_top_of_the_box">Doğru! O kutunun üstünde.</string>
+        <string name="where_is_she_now">Şimdi nerede?</string>
+        <string name="e_mail__">E-posta</string>
+        <string name="register_">KAYIT OL</string>
+    <string name="already_registered_">Zaten kayıtlı mısınız?</string>
+    <string name="penny_come_back_here">Penny buraya geri gel!</string>
+    <string name="she_is_right_under_the_box">O kutunun hemen altında.</string>
+    <string name="digital">dijital</string>
+    <string name="submit_your_answer__">Cevabınızı Gönderin</string>
+    <string name="submit_your_answer___">Cevabınızı Gönderin</string>
 
 </resources>
+
+
+
+

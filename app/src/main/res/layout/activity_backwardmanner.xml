@@ -1,128 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFDBFFF5"
-    tools:context=".Clock">
+    android:padding="16dp">
 
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/crushed"
+        android:layout_marginTop="200dp"
+        android:textSize="36sp" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/backgroundImageClockGame"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/backgroundclocks"
-        tools:context=".Clock"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="0dp">
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/crushed"
+        android:textAlignment="center"
+        android:textSize="40sp" />
 
-        <Button
-            android:id="@+id/newButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="#FF8BC34A"
-            android:fontFamily="@font/bebas_neue"
-            android:text="@string/newww"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.356"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.808"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/playButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="#FF8BC34A"
-            android:enabled="false"
-            android:fontFamily="@font/bebas_neue"
-            android:text="@string/check"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.659"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.81"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/scoreClock"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bebas_neue"
-            android:text="Score"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.955"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.025" />
-
-        <TextView
-            android:id="@+id/resultClock"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bebas_neue"
-            android:text="Result"
-            android:textSize="15dp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.923" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/crushed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:textSize="36sp" />
 
     <EditText
-        android:id="@+id/inputHour"
-        android:layout_width="145dp"
-        android:layout_height="52dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/hour"
+        android:id="@+id/answerEditText"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/numberTextView"
+        android:fontFamily="@font/crushed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.716" />
+        android:visibility="gone" />
 
-    <EditText
-        android:id="@+id/inputMinute"
-        android:layout_width="145dp"
-        android:layout_height="52dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/minute"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.864"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitAnswerButton"
+        android:layout_width="253dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/answerEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        android:fontFamily="@font/crushed"
+        android:text="@string/submit_your_answer___"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitAnswerButton"
+        android:fontFamily="@font/crushed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="244dp"
+        android:textSize="18sp" />
 
     <ImageView
-        android:id="@+id/clockImageView"
-        android:layout_width="334dp"
-        android:layout_height="350dp"
-        android:layout_marginEnd="36dp"
-        android:contentDescription="@string/todo90"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.242"
-        app:srcCompat="@drawable/clocklearning" />
+        android:id="@+id/imageView15"
+        android:layout_width="40dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="320dp"
+        app:srcCompat="@drawable/_close_" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

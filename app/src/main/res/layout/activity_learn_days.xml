@@ -46,7 +46,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="Monday"
+                    android:text="@string/monday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
                 </LinearLayout>
@@ -81,7 +81,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="tuesday"
+                    android:text="@string/tuesday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
                 </LinearLayout>
@@ -114,7 +114,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="wednesday"
+                    android:text="@string/wednesday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
                 </LinearLayout>
@@ -147,7 +147,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="thursday"
+                    android:text="@string/thursday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
                 </LinearLayout>
@@ -180,7 +180,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="friday"
+                    android:text="@string/friday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
                 </LinearLayout>
@@ -213,7 +213,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="saturday"
+                    android:text="@string/saturday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
                 </LinearLayout>
@@ -246,7 +246,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="sunday"
+                    android:text="@string/sunday"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
                 </LinearLayout>
@@ -265,7 +265,7 @@
         android:layout_marginTop="72dp"
         android:fontFamily="@font/crushed"
         android:gravity="center"
-        android:text="Learn the Days of the Week"
+        android:text="@string/learn_the_days_of_the_week"
         android:textColor="#D3FF9800"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -279,7 +279,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/crushed"
-        android:text="Click for the sound."
+        android:text="@string/click_for_the_sound"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintEnd_toEndOf="parent"

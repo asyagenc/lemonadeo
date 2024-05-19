@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#FFDBFFF5"
     android:backgroundTint="#FFDBFFF5"
-    tools:context=".clockMenu">
+    tools:context=".clockMenuLearn">
 
     <!-- Guideline to help center the card views -->
     <androidx.constraintlayout.widget.Guideline
@@ -85,7 +85,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/crushed"
                 android:gravity="center"
-                android:text="digital"
+                android:text="@string/digital"
                 android:textSize="20sp" />
 
             <ImageView
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/crushed"
-        android:text="Choose"
+        android:text="@string/choose"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@id/analogCard"
         app:layout_constraintEnd_toEndOf="parent"

@@ -22,6 +22,7 @@ import java.lang.Math;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import java.util.Locale;
 import java.util.Random;
 
 public class Clock extends AppCompatActivity {
@@ -30,11 +31,9 @@ public class Clock extends AppCompatActivity {
 
     Button playButton;
     Button newButton;
-    EditText inputHour;
-    EditText inputMinute;
+    EditText input;
     TextView score;
     TextView result;
-
     int hour = 12;
     int minute = 0;
     int total_score = 0;
@@ -43,6 +42,7 @@ public class Clock extends AppCompatActivity {
     Paint hourHandPaint;
     Paint minuteHandPaint;
 
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,13 +50,11 @@ public class Clock extends AppCompatActivity {
         setContentView(R.layout.activity_clock);
         clockImageView = findViewById(R.id.clockImageView);
         playButton = findViewById(R.id.playButton);
-        inputHour = findViewById(R.id.inputHour);
-        inputMinute = findViewById(R.id.inputMinute);
+        input = findViewById(R.id.inputHour);
         newButton=findViewById(R.id.newButton);
         score=findViewById(R.id.scoreClock);
         result=findViewById(R.id.resultClock);
-
-
+        
         Resources resources = getResources();
         hourHandPaint = new Paint();
         hourHandPaint.setColor(Color.BLUE);
@@ -83,8 +81,8 @@ public class Clock extends AppCompatActivity {
         newButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(count == 10) {
-                    score.setText("Game Over! Your score is: " + score + "/10");
+                if(count == 10 && !isAppLanguageTurkish()) {
+                    score.setText("Game Over! Your score is: " + total_score + "/10");
                     if(total_score < 3 && total_score >= 0){
                         result.setText("You should work harder to be an expert!");
                         result.setVisibility(View.VISIBLE);
@@ -103,6 +101,23 @@ public class Clock extends AppCompatActivity {
                     }
                     return;
                 }
+                else if (count == 10 && isAppLanguageTurkish()) {
+                    score.setText("Oyun Bitti! Puanınız: " + total_score + "/10");
+                    if (total_score < 3 && total_score >= 0) {
+                        result.setText("Uzman olmak için daha çok çalışmalısınız!");
+                        result.setVisibility(View.VISIBLE);
+                    } else if (total_score >= 3 && total_score <= 7) {
+                        result.setText("Uzman olmaya yaklaşıyorsunuz!");
+                        result.setVisibility(View.VISIBLE);
+                    } else if (total_score == 8 || total_score == 9) {
+                        result.setText("Uzman olmaya çok az kaldı!");
+                        result.setVisibility(View.VISIBLE);
+                    } else if (total_score == count) {
+                        result.setText("Uzmansınız!");
+                        result.setVisibility(View.VISIBLE);
+                    }
+                    return;
+                }
                 count++;
                 // Rastgele saat ve dakika seçimi
                 Random random = new Random();
@@ -117,6 +132,41 @@ public class Clock extends AppCompatActivity {
         });
 
 
+    }
+
+   public  String turkishi(int saat) {
+       if (saat == 1 || saat == 5 || saat == 8 || saat == 11) {
+           return "'i";
+       } else if (saat == 2 || saat == 7 || saat == 12) {
+           return "'yi";
+       } else if (saat == 3 || saat == 4) {
+           return "'ü";
+       } else if (saat == 6) {
+           return "'yı";
+       } else if (saat == 9 || saat == 10) {
+           return "'u";
+       }
+       return "i";
+
+   }
+
+    public  String turkisha(int saat) {
+        if (saat == 1 || saat == 5 || saat == 8 || saat == 11 || saat == 3 || saat == 4) {
+            return "'e";
+        } else if (saat == 2 || saat == 7 || saat == 12) {
+            return "'ye";
+        } else if (saat == 6) {
+            return "'ya";
+        } else if (saat == 9 || saat == 10) {
+            return "'a";
+        }
+     return "e";
+    }
+
+
+    private boolean isAppLanguageTurkish() {
+        Locale current = getResources().getConfiguration().locale;
+        return current.getLanguage().equals(new Locale("tr").getLanguage());
     }
 
     protected void onResume() {
@@ -176,29 +226,83 @@ public class Clock extends AppCompatActivity {
 
 
 
-    // Oyun fonksiyonu (uygulamaya göre geliştirilecek)
+
+    final String[] answer = new String[1];
+
     public void playGame() {
-        // Kullanıcının girişini alın
 
-        String strHour = inputHour.getText().toString().trim();
-        String strMinute = inputMinute.getText().toString().trim();
+        answer[0] = input.getText().toString().trim();
 
-        if (!strHour.isEmpty() && !strMinute.isEmpty()) {
-            int userHour = Integer.parseInt(strHour);
-            int userMinute = Integer.parseInt(strMinute);
+        if (!isAppLanguageTurkish()){
+            if (minute == 0) {
+                answer[0] = Integer.toString(hour) + " o'clock";
+            } else if (minute < 15) {
+                answer[0] = Integer.toString(minute) + " past " + Integer.toString(hour);
+            } else if (minute == 15) {
+                answer[0] = "quarter past " + Integer.toString(hour);
+            } else if (minute < 30) {
+                answer[0] = Integer.toString(minute) + " past " + Integer.toString(hour);
+            } else if (minute == 30) {
+                answer[0] = "half past " + Integer.toString(hour);
+            } else if (minute < 45) {
+                answer[0] = Integer.toString(60 - minute) + " to " + Integer.toString(hour + 1);
+            } else if (minute == 45) {
+                answer[0] = "quarter to " + Integer.toString(hour + 1);
+            } else if (minute < 60) {
+                answer[0] = Integer.toString(60 - minute) + " to " + Integer.toString(hour + 1);
+            }
 
-            // Kullanıcının girdiği değerlerin kontrolü
-            if (userHour == hour && userMinute == minute) {
-                // Doğru cevap
+        if (!input.getText().toString().isEmpty()) {
+            if (input.getText().toString().equals(answer[0])) {
                 Toast.makeText(getApplicationContext(), "Congrulations! Correct Answer.", Toast.LENGTH_SHORT).show();
                 total_score++;
             } else {
-                // Yanlış cevap
-                Toast.makeText(getApplicationContext(), "Wrong Answer! Correct Answer was " + hour + ":" + minute, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Wrong Answer! Correct Answer was:  " + answer[0], Toast.LENGTH_LONG).show();
             }
         } else {
-            // Boş giriş
             Toast.makeText(getApplicationContext(), "Please enter valid values.", Toast.LENGTH_SHORT).show();
         }
+
     }
+
+        else{
+
+            if (minute == 0) {
+                answer[0] = Integer.toString(hour);
+            } else if (minute < 15) {
+                answer[0] = Integer.toString(hour) +turkishi(hour)+ " " + Integer.toString(minute) + " gece";
+            } else if (minute == 15) {
+                answer[0] =   Integer.toString(hour) +turkishi(hour)+" ceyrek gece";
+            } else if (minute < 30) {
+                answer[0] = Integer.toString(hour) +turkishi(hour)+ " " + Integer.toString(minute) + " gece";
+            } else if (minute == 30) {
+                answer[0] =  Integer.toString(hour) + " bucuk";
+            } else if (minute < 45) {
+                answer[0] = Integer.toString(hour+1) +turkisha(hour)+ " " + Integer.toString(60 - minute) + " var";
+            } else if (minute == 45) {
+                answer[0] = Integer.toString(hour + 1) + "ceyrek var" ;
+            } else if (minute < 60) {
+                answer[0] =  Integer.toString(hour+1) +turkisha(hour)+ " " + Integer.toString(60 - minute) + " var";
+            }
+
+            if (!input.getText().toString().isEmpty()) {
+                if (input.getText().toString().equals(answer[0])) {
+                    // Doğru cevap
+                    Toast.makeText(getApplicationContext(), "Tebrikler! Doğru Cevap.", Toast.LENGTH_SHORT).show();
+                    total_score++;
+                } else {
+                    Toast.makeText(getApplicationContext(), "Yanlış Cevap! Doğru Cevap: " + answer[0], Toast.LENGTH_LONG).show();
+                }
+            } else {
+                Toast.makeText(getApplicationContext(), "Lütfen geçerli değerler girin.", Toast.LENGTH_SHORT).show();
+            }
+
+
+
+
+
+        }
+
+    }
+
 }

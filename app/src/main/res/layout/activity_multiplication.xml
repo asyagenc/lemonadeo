@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFDBFFF5"
@@ -80,6 +81,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="20sp"
+        app:srcCompat="@drawable/_close_" />
 
 
 </RelativeLayout>

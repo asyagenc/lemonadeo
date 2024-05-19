@@ -17,7 +17,7 @@ public class multiplication extends AppCompatActivity {
     private TextView numberTextView,questionTextView,scoreTextView,resultTextView;
     private EditText answerEditText;
     private Button submitAnswerButton;
-    private ImageView imageView;
+    private ImageView imageView,close;
     private int total_score = 0;
     private int num1,num2;
     private int count = 0;
@@ -51,6 +51,17 @@ public class multiplication extends AppCompatActivity {
         submitAnswerButton = findViewById(R.id.submitAnswerButton);
         resultTextView = findViewById(R.id.resultTextView);
         imageView = findViewById(R.id.imageView);
+        close=findViewById(R.id.close);
+
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(getApplicationContext(),GameMainMenu.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         
 

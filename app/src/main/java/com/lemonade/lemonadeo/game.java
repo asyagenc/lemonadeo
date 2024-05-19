@@ -35,5 +35,6 @@ public class game extends Activity {
         Intent intent = new Intent(game.this, difficulty.class);
         intent.putExtra("gameMode", gameMode);
         startActivity(intent);
+        finish();
     }
 }

@@ -50,5 +50,6 @@ public class mathMenu extends AppCompatActivity {
         Intent intent = new Intent(mathMenu.this, multiplication.class);
         intent.putExtra("difficulty", difficulty);
         startActivity(intent);
+        finish();
     }
 }

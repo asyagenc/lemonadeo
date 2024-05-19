@@ -29,11 +29,14 @@ public class difficulty extends Activity {
         Intent intent;
         if ("Forward".equals(gameMode)) {
             intent = new Intent(this, forwardmanner.class);
+            finish();
         } else {
             intent = new Intent(this, backwardmanner.class);
+            finish();
         }
         intent.putExtra("difficulty", difficulty);
         startActivity(intent);
+        finish();
 
     }
 }

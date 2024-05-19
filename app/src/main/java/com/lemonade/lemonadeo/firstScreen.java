@@ -18,9 +18,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class firstScreen extends AppCompatActivity {
 
-    ImageView turkishImageView, ukImageView;
+    ImageView turkishImageView, ukImageView,logout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +32,7 @@ public class firstScreen extends AppCompatActivity {
 
         turkishImageView = findViewById(R.id.turkish);
         ukImageView = findViewById(R.id.uk);
+        logout=findViewById(R.id.imageView14);
 
 
 
@@ -51,9 +55,20 @@ public class firstScreen extends AppCompatActivity {
                 recreate();
                 Intent intent = new Intent(firstScreen.this, Register.class);
                 startActivity(intent);
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent=new Intent(getApplicationContext(),Log.class);
+                startActivity(intent);
                 finish();
             }
         });
+
+
 
 
 

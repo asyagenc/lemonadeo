@@ -9,13 +9,16 @@
     tools:context=".MonthsLearningTr">
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewtr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="166dp"
         android:scrollbars="none"
-        android:id="@+id/horizontalScrollViewtr"
-        app:layout_constraintTop_toBottomOf="@+id/textView18tr"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20tr">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -26,15 +29,15 @@
                 android:id="@+id/janCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="150dp"
@@ -58,24 +61,25 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/febCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/febCardTr"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
 
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:src="@drawable/february" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -91,23 +95,24 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/marchCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/marchCardTr"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:src="@drawable/march" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -123,22 +128,24 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/aprilCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/aprilCardTr"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:src="@drawable/april" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -154,23 +161,24 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/mayCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/mayCardTr"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:src="@drawable/may" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -188,20 +196,22 @@
                 android:id="@+id/juneCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:src="@drawable/june" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -217,23 +227,25 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/julyCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/julyCardTr"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:src="@drawable/july" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -252,20 +264,22 @@
                 android:id="@+id/augustCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:src="@drawable/august" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -281,23 +295,25 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/septemberCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/septemberCardTr"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:src="@drawable/september" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -313,22 +329,24 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/octoberCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/octoberCardTr"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:src="@drawable/october" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -344,23 +362,25 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/novemberCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/novemberCardTr"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:src="@drawable/november" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -376,23 +396,25 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/decemberCardTr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/decemberCardTr"
+                android:layout_margin="8dp"
                 android:elevation="8dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
 
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:src="@drawable/december" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -410,23 +432,24 @@
         </LinearLayout>
 
     </HorizontalScrollView>
+
     <TextView
         android:id="@+id/textView20tr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="119dp"
         android:fontFamily="@font/crushed"
         android:text="@string/click_for_the_sound__"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollViewtr"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18tr" />
 
     <TextView
         android:id="@+id/textView18tr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="122dp"
         android:fontFamily="@font/crushed"
         android:gravity="center"
         android:text="@string/learn_the_months"
@@ -434,7 +457,6 @@
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

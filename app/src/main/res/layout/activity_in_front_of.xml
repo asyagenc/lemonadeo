@@ -54,7 +54,7 @@
         android:layout_marginTop="152dp"
         android:fontFamily="@font/crushed"
         android:gravity="center"
-        android:text="Where is Penny?"
+        android:text="@string/where_is_penny"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -69,7 +69,7 @@
         android:fontFamily="@font/crushed"
 
         android:gravity="center|start"
-        android:text="She is in front of the box."
+        android:text="@string/she_is_in_front_of_the_box"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"

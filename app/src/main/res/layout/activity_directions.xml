@@ -18,7 +18,7 @@
         android:layout_marginBottom="84dp"
         android:fontFamily="@font/crushed"
         android:gravity="center_horizontal"
-        android:text="This is my chicken Penny. She can be really naughty can you help me find her?"
+        android:text="@string/this_is_my_chicken_penny_she_can_be_really_naughty_can_you_help_me_find_her"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"

@@ -24,6 +24,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Locale;
+
 public class ClockLearning extends AppCompatActivity {
 
 
@@ -50,7 +52,7 @@ public class ClockLearning extends AppCompatActivity {
 
 
         hourInput = findViewById(R.id.hourInput);
-        minuteInput = findViewById(R.id.minuteInput);
+        minuteInput=findViewById(R.id.minuteInput);
         emptyLearnCLock = findViewById(R.id.emptyClock);
         submit = findViewById(R.id.submitInput);
         analog = findViewById(R.id.AnalogOutput);
@@ -99,6 +101,42 @@ public class ClockLearning extends AppCompatActivity {
             return insets;
         });
     }
+
+
+    private boolean isAppLanguageTurkish() {
+        Locale current = getResources().getConfiguration().locale;
+        return current.getLanguage().equals(new Locale("tr").getLanguage());
+    }
+
+    private  String turkishi(int saat) {
+        if (saat == 1 || saat == 5 || saat == 8 || saat == 11) {
+            return "'i";
+        } else if (saat == 2 || saat == 7 || saat == 12) {
+            return "'yi";
+        } else if (saat == 3 || saat == 4) {
+            return "'ü";
+        } else if (saat == 6) {
+            return "'yı";
+        } else if (saat == 9 || saat == 10) {
+            return "'u";
+        }
+        return "i";
+
+    }
+
+    private String turkisha(int saat) {
+        if (saat == 1 || saat == 5 || saat == 8 || saat == 11 || saat == 3 || saat == 4) {
+            return "'e";
+        } else if (saat == 2 || saat == 7 || saat == 12) {
+            return "'ye";
+        } else if (saat == 6) {
+            return "'ya";
+        } else if (saat == 9 || saat == 10) {
+            return "'a";
+        }
+        return "e";
+    }
+
 
     protected void onResume() {
         // Saat ve dakika ibrelerini çizme
@@ -152,22 +190,56 @@ public class ClockLearning extends AppCompatActivity {
     }
 
     private void updateClockText() {
-        if (minute == 0) {
-            analog.setText(Integer.toString(hour) + " o'clock");
-        } else if (minute < 15) {
-            analog.setText(Integer.toString(minute) + " past " + Integer.toString(hour));
-        } else if (minute == 15) {
-            analog.setText(" quarter past " + Integer.toString(hour));
-        } else if (minute < 30) {
-            analog.setText(Integer.toString(minute) + " past " + Integer.toString(hour));
-        } else if (minute == 30) {
-            analog.setText(" half past " + Integer.toString(hour));
-        } else if (minute < 45) {
-            analog.setText(Integer.toString(60 - minute) + " to " + Integer.toString(hour + 1));
-        } else if (minute == 45) {
-            analog.setText(" quarter to " + Integer.toString(hour + 1));
-        } else if (minute < 60) {
-            analog.setText(Integer.toString(60 - minute) + " to " + Integer.toString(hour + 1));
+        if (!isAppLanguageTurkish()){
+            if (minute == 0) {
+                answer[0] = Integer.toString(hour) + " o'clock";
+            } else if (minute < 15) {
+                answer[0] = Integer.toString(minute) + " past " + Integer.toString(hour);
+            } else if (minute == 15) {
+                answer[0] = "quarter past " + Integer.toString(hour);
+            } else if (minute < 30) {
+                answer[0] = Integer.toString(minute) + " past " + Integer.toString(hour);
+            } else if (minute == 30) {
+                answer[0] = "half past " + Integer.toString(hour);
+            } else if (minute < 45) {
+                answer[0] = Integer.toString(60 - minute) + " to " + Integer.toString(hour + 1);
+            } else if (minute == 45) {
+                answer[0] = "quarter to " + Integer.toString(hour + 1);
+            } else if (minute < 60) {
+                answer[0] = Integer.toString(60 - minute) + " to " + Integer.toString(hour + 1);
+            }
+
+
+
         }
+
+        else{
+
+            if (minute == 0) {
+                analog.setText(Integer.toString(hour));
+            } else if (minute < 15) {
+                analog.setText(Integer.toString(hour) +turkishi(hour)+ " " + Integer.toString(minute) + " gece");
+            } else if (minute == 15) {
+                analog.setText(Integer.toString(hour) +turkishi(hour)+" ceyrek gece");
+            } else if (minute < 30) {
+                analog.setText(Integer.toString(hour) +turkishi(hour)+ " " + Integer.toString(minute) + " gece");
+            } else if (minute == 30) {
+                analog.setText(Integer.toString(hour) + " bucuk");
+            } else if (minute < 45) {
+                analog.setText(Integer.toString(hour+1) +turkisha(hour)+ " " + Integer.toString(60 - minute) + " var");
+            } else if (minute == 45) {
+               analog.setText(answer[0] = Integer.toString(hour + 1) + "ceyrek var");
+            } else if (minute < 60) {
+                analog.setText(Integer.toString(hour+1) +turkisha(hour)+ " " + Integer.toString(60 - minute) + " var");
+            }
+
+
+
+
+
+
+
+        }
+
     }
 }

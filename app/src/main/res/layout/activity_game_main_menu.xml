@@ -40,7 +40,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:elevation="300dp"
+                    android:elevation="8dp"
                     app:cardCornerRadius="20dp">
 
                     <RelativeLayout
@@ -79,7 +79,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:elevation="300dp"
+                    android:elevation="8dp"
                     app:cardCornerRadius="20dp">
 
                     <RelativeLayout
@@ -134,7 +134,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:elevation="300dp"
+                    android:elevation="8dp"
                     app:cardCornerRadius="20dp">
 
                     <RelativeLayout
@@ -173,7 +173,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:elevation="80dp"
+                    android:elevation="8dp"
                     app:cardCornerRadius="20dp">
 
                     <RelativeLayout
@@ -229,7 +229,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:elevation="300dp"
+                    android:elevation="8dp"
                     app:cardCornerRadius="20dp">
 
                     <RelativeLayout
@@ -267,7 +267,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:elevation="80dp"
+                    android:elevation="8dp"
                     app:cardCornerRadius="20dp">
 
                     <RelativeLayout
@@ -320,7 +320,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:elevation="300dp"
+                    android:elevation="8dp"
                     app:cardCornerRadius="20dp">
 
                     <RelativeLayout
@@ -336,7 +336,7 @@
                             android:layout_marginTop="8dp"
                             android:fontFamily="@font/crushed"
                             android:gravity="center"
-                            android:text="@string/remember_the_digits_game"
+                            android:text="Memory Game"
                             android:textSize="20sp" />
 
                         <ImageView
@@ -360,7 +360,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
-                    android:elevation="80dp"
+                    android:elevation="8dp"
                     app:cardCornerRadius="20dp">
 
                     <RelativeLayout

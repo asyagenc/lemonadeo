@@ -47,7 +47,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/crushed"
                         android:gravity="center"
-                        android:text="January"
+                        android:text="@string/january_"
                         android:textColor="#557AAF"
                         android:textSize="20sp" />
 
@@ -82,7 +82,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="february"
+                    android:text="@string/february_"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
                 </LinearLayout>
@@ -114,7 +114,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="march"
+                    android:text="@string/march_"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
                 </LinearLayout>
@@ -145,7 +145,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="april"
+                    android:text="@string/april_"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
                 </LinearLayout>
@@ -177,7 +177,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="may"
+                    android:text="@string/may_"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
                 </LinearLayout>
@@ -208,7 +208,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="june"
+                    android:text="@string/june_"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
         </LinearLayout>
@@ -240,7 +240,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="july"
+                    android:text="@string/july_"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -272,7 +272,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="august"
+                    android:text="@string/august_"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -304,7 +304,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="september"
+                    android:text="@string/september_"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -335,7 +335,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="october"
+                    android:text="@string/october_"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -367,7 +367,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="november"
+                    android:text="@string/november_"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -399,7 +399,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/crushed"
                     android:gravity="center"
-                    android:text="december"
+                    android:text="@string/december_"
                     android:textColor="#557AAF"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -416,7 +416,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/crushed"
-        android:text="Click for the sound."
+        android:text="@string/click_for_the_sound__"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintEnd_toEndOf="parent"

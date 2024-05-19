@@ -12,7 +12,6 @@ public class mathMenu extends AppCompatActivity {
     private Button easyButton;
     private Button mediumButton;
     private Button hardButton;
-    private Button gameMenuButton;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -44,14 +43,7 @@ public class mathMenu extends AppCompatActivity {
                 startGame("Hard");
             }
         });
-        gameMenuButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),GameMainMenu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
     }
 
     private void startGame(String difficulty) {

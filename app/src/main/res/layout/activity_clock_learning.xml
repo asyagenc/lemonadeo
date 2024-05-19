@@ -18,6 +18,35 @@
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="63dp">
 
+        <EditText
+            android:id="@+id/hourInput"
+            android:layout_width="76dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#FF8BC34A"
+            android:ems="10"
+            android:hint="@string/_00"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.788" />
+
+        <EditText
+            android:id="@+id/minuteInput"
+            android:layout_width="76dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#FF8BC34A"
+            android:ems="10"
+            android:hint="@string/_00"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.623"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.79" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
@@ -32,36 +61,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.242"
         app:srcCompat="@drawable/clocklearning" />
-
-    <EditText
-        android:id="@+id/hourInput"
-        android:layout_width="58dp"
-        android:layout_height="44dp"
-        android:backgroundTint="#FF8BC34A"
-        android:ems="10"
-        android:hint="@string/_00"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.393"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.791" />
-
-    <EditText
-        android:id="@+id/minuteInput"
-        android:layout_width="58dp"
-        android:layout_height="44dp"
-        android:backgroundTint="#FF8BC34A"
-        android:ems="10"
-        android:hint="@string/_00_"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.617"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.793" />
 
     <TextView
         android:id="@+id/AnalogOutput"

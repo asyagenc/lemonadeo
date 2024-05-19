@@ -1,6 +1,7 @@
 package com.lemonade.lemonadeo;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -21,7 +22,7 @@ public class Days extends AppCompatActivity {
     TextView message, boyBubble, text;
     MediaPlayer correctDays;
     MediaPlayer incorrectDays;
-    ImageView lemonadegirl;
+    ImageView lemonadegirl,close;
     GifImageView gifImageView;
 
     @SuppressLint("MissingInflatedId")
@@ -43,14 +44,26 @@ public class Days extends AppCompatActivity {
         gifImageView = findViewById(R.id.gif);
         boyBubble = findViewById(R.id.textView16);
         text = findViewById(R.id.textView17);
+        close=findViewById(R.id.imageView8);
 
         correctDays = MediaPlayer.create(this, R.raw.correct);
         incorrectDays = MediaPlayer.create(this, R.raw.incorrect);
         gifImageView.setVisibility(View.GONE);
         message.setVisibility(View.GONE);
         text.setVisibility(View.GONE);
+        close.setVisibility(View.GONE);
+
 
         int[] currentDay = {1};
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(Days.this, GameMainMenu.class);
+                startActivity(intent);
+            }
+        });
 
         mainButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +77,8 @@ public class Days extends AppCompatActivity {
                 text.setVisibility(View.GONE);
                 message.setVisibility(View.GONE);
                 gifImageView.setVisibility(View.GONE);
+                close.setVisibility(View.GONE);
+
                 for (Button button : otherButtons) {
                     button.setVisibility(View.VISIBLE);
                 }
@@ -139,6 +154,7 @@ public class Days extends AppCompatActivity {
                         correctDays.start();
                         gifImageView.setImageResource(R.drawable.limonata);
                         gifImageView.setVisibility(View.VISIBLE);
+                        close.setVisibility(View.VISIBLE);
                         message.setVisibility(View.VISIBLE);
                         lemonadegirl.setVisibility(View.GONE);
                         text.setVisibility(View.GONE);

@@ -29,7 +29,7 @@ public class Months extends AppCompatActivity {
 
     MediaPlayer correctMonths;
     MediaPlayer incorrectMonths;
-    ImageView lemonadegirl;
+    ImageView lemonadegirl,close;
     GifImageView gifImageView;
     TextView message,boyBubble,text;
     @SuppressLint("MissingInflatedId")
@@ -62,17 +62,29 @@ public class Months extends AppCompatActivity {
         otherButtons[9] = findViewById(R.id.monthBttn10);
         otherButtons[10] = findViewById(R.id.monthBttn11);
         otherButtons[11] = findViewById(R.id.monthBttn12);
+        close=findViewById(R.id.imageView8);
+
         message = findViewById(R.id.txtVieww);
         boyBubble=findViewById(R.id.bubble);
         text=findViewById(R.id.textView17);
         gifImageView.setImageResource(View.GONE);
         message.setVisibility(View.GONE);
         text.setVisibility(View.GONE);
+        close.setVisibility(View.GONE);
 
 
 
 
         int[] currentMonth= {1};
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(Months.this, GameMainMenu.class);
+                startActivity(intent);
+            }
+        });
 
         mainButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +101,8 @@ public class Months extends AppCompatActivity {
                 text.setVisibility(View.GONE);
                 message.setVisibility(View.GONE);
                 gifImageView.setVisibility(View.GONE);
+                close.setVisibility(View.GONE);
+
 
                 for (int i = 0; i <12; i++) {
                     otherButtons[i].setEnabled(true);
@@ -223,6 +237,8 @@ public class Months extends AppCompatActivity {
                         currentMonth[0] = 0;
                         gifImageView.setImageResource(R.drawable.limonata);
                         gifImageView.setVisibility(View.VISIBLE);
+                        close.setVisibility(View.VISIBLE);
+
                         message.setVisibility(View.VISIBLE);
                         lemonadegirl.setVisibility(View.GONE);
                         text.setVisibility(View.GONE);

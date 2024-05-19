@@ -15,7 +15,7 @@
         android:layout_marginTop="72dp"
         android:fontFamily="@font/crushed"
         android:gravity="center"
-        android:text="Learn the Seasons"
+        android:text="@string/learn_the_seasons"
         android:textColor="#D3FF9800"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -62,7 +62,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/crushed"
                         android:gravity="center"
-                        android:text="Spring"
+                        android:text="@string/spring"
                         android:textColor="#557AAF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -94,7 +94,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/crushed"
                         android:gravity="center"
-                        android:text="Summer"
+                        android:text="@string/summer"
                         android:textColor="#557AAF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -126,7 +126,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/crushed"
                         android:gravity="center"
-                        android:text="Autumn"
+                        android:text="@string/autumn"
                         android:textColor="#557AAF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -158,7 +158,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/crushed"
                         android:gravity="center"
-                        android:text="Winter"
+                        android:text="@string/winter"
                         android:textColor="#557AAF"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -175,7 +175,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/crushed"
-        android:text="Click for the sound."
+        android:text="@string/click_for_the_sound_"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintEnd_toEndOf="parent"

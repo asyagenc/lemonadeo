@@ -57,7 +57,7 @@
         android:layout_marginTop="30dp"
         android:backgroundTint="#FF009688"
         android:fontFamily="@font/crushed"
-        android:text="Submit Your Answer"
+        android:text="@string/submit_your_answer_"
         android:textSize="20sp"
         android:visibility="visible" />
 

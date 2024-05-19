@@ -15,7 +15,7 @@
         android:layout_marginBottom="80dp"
         android:fontFamily="@font/crushed"
         android:gravity="center"
-        android:text="Can you see her she is among all the other chickens."
+        android:text="@string/can_you_see_her_she_is_among_all_the_other_chickens"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"

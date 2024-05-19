@@ -1,31 +1,24 @@
 package com.lemonade.lemonadeo;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
-import android.opengl.Visibility;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.Random;
-
 import pl.droidsonroids.gif.GifImageView;
 
 public class Days extends AppCompatActivity {
 
+    private static final String TAG = "DaysActivity";
     Button mainButton;
     Button[] otherButtons = new Button[7];
-
-
-    TextView message,boyBubble,text;
+    TextView message, boyBubble, text;
     MediaPlayer correctDays;
     MediaPlayer incorrectDays;
     ImageView lemonadegirl;
@@ -35,7 +28,6 @@ public class Days extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_days);
 
         mainButton = findViewById(R.id.shuffleBttn);
@@ -48,21 +40,15 @@ public class Days extends AppCompatActivity {
         otherButtons[6] = findViewById(R.id.dayBttn7);
         message = findViewById(R.id.textView15);
         lemonadegirl = findViewById(R.id.imageView11);
-        gifImageView=findViewById(R.id.gif);
-        boyBubble=findViewById(R.id.textView16);
-        text=findViewById(R.id.textView17);
+        gifImageView = findViewById(R.id.gif);
+        boyBubble = findViewById(R.id.textView16);
+        text = findViewById(R.id.textView17);
 
         correctDays = MediaPlayer.create(this, R.raw.correct);
         incorrectDays = MediaPlayer.create(this, R.raw.incorrect);
-        gifImageView.setImageResource(View.GONE);
+        gifImageView.setVisibility(View.GONE);
         message.setVisibility(View.GONE);
         text.setVisibility(View.GONE);
-
-
-
-
-
-
 
         int[] currentDay = {1};
 
@@ -81,7 +67,6 @@ public class Days extends AppCompatActivity {
                 for (Button button : otherButtons) {
                     button.setVisibility(View.VISIBLE);
                 }
-
 
                 for (Button button : otherButtons) {
                     button.setEnabled(true);
@@ -105,8 +90,8 @@ public class Days extends AppCompatActivity {
             otherButtons[j].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    Log.d(TAG, "Button clicked: " + otherButtons[buttonIndex].getText().toString());
                     if (currentDay[0] == 1 && otherButtons[buttonIndex].getText().equals("Monday")) {
-
                         text.setText("Press for next day");
                         text.setVisibility(View.VISIBLE);
                         correctDays.start();
@@ -134,7 +119,7 @@ public class Days extends AppCompatActivity {
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
                         currentDay[0] = 5;
-                    } else if (currentDay[0] == 5 && otherButtons[buttonIndex].getText().equals("Friday")) {
+                    } else if (currentDay[                    0] == 5 && otherButtons[buttonIndex].getText().equals("Friday")) {
                         text.setText("Press for next day");
                         text.setVisibility(View.VISIBLE);
                         correctDays.start();
@@ -149,6 +134,7 @@ public class Days extends AppCompatActivity {
                         otherButtons[buttonIndex].setEnabled(false);
                         currentDay[0] = 7;
                     } else if (currentDay[0] == 7 && otherButtons[buttonIndex].getText().equals("Sunday")) {
+                        Log.d(TAG, "Correct sequence completed. Displaying congratulations message.");
                         message.setText("CONGRATULATIONS ENJOY YOUR LEMONADE!");
                         correctDays.start();
                         gifImageView.setImageResource(R.drawable.limonata);
@@ -160,13 +146,16 @@ public class Days extends AppCompatActivity {
                         for (Button button : otherButtons) {
                             button.setVisibility(View.GONE);
                         }
-
                         otherButtons[buttonIndex].setBackgroundColor(Color.rgb(139, 195, 74));
                         otherButtons[buttonIndex].setEnabled(false);
                         currentDay[0] = 0;
+                    } else {
+                        Log.d(TAG, "Incorrect button pressed or sequence order is wrong.");
+                        incorrectDays.start();
                     }
                 }
             });
         }
     }
 }
+

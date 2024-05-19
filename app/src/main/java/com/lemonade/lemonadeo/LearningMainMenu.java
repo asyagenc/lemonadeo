@@ -40,7 +40,7 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LearningMainMenu.this, clockMenuLearn.class);
+                Intent intent = new Intent(LearningMainMenu.this, ClockLearning.class);
                 startActivity(intent);
             }
         });

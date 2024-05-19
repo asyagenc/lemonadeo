@@ -16,13 +16,13 @@ public class learnDaysTr extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn_days_tr);
 
-        playMonday = MediaPlayer.create(this, R.raw.mooonday);
-        playTuesday = MediaPlayer.create(this, R.raw.tuesdayy);
-        playWednesday = MediaPlayer.create(this, R.raw.wwednesday);
-        playThursday = MediaPlayer.create(this, R.raw.thursday);
-        playFriday = MediaPlayer.create(this, R.raw.fridayy);
-        playSaturday = MediaPlayer.create(this, R.raw.saaaturday);
-        playSunday = MediaPlayer.create(this, R.raw.ssundayy);
+        playMonday = MediaPlayer.create(this, R.raw.ptesi);
+        playTuesday = MediaPlayer.create(this, R.raw.sali);
+        playWednesday = MediaPlayer.create(this, R.raw.carsamba);
+        playThursday = MediaPlayer.create(this, R.raw.persembe);
+        playFriday = MediaPlayer.create(this, R.raw.cuma);
+        playSaturday = MediaPlayer.create(this, R.raw.ctesi);
+        playSunday = MediaPlayer.create(this, R.raw.pazar);
 
         CardView cardView1 = findViewById(R.id.monCardtr);
         CardView cardView2 = findViewById(R.id.tuesdayCardtr);

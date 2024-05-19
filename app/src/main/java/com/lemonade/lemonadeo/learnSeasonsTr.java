@@ -22,10 +22,10 @@ public class learnSeasonsTr extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_learn_seasons_tr);
 
-        playWinter = MediaPlayer.create(this, R.raw.spring);
-        playSpring = MediaPlayer.create(this, R.raw.summer);
-        playSummer = MediaPlayer.create(this, R.raw.aut);
-        playFall= MediaPlayer.create(this, R.raw.winter);
+        playWinter = MediaPlayer.create(this, R.raw.ilkbahar);
+        playSpring = MediaPlayer.create(this, R.raw.yaz2);
+        playSummer = MediaPlayer.create(this, R.raw.sobaharr);
+        playFall= MediaPlayer.create(this, R.raw.kis);
 
         CardView cardView1 = findViewById(R.id.winterCardtr);
         CardView cardView2 = findViewById(R.id.springCardtr);

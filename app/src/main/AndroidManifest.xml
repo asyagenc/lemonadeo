@@ -15,6 +15,12 @@
         android:theme="@style/Theme.Lemonadeo"
         tools:targetApi="31">
         <activity
+            android:name=".spellingTr"
+            android:exported="false" />
+        <activity
+            android:name=".similarPicsTr"
+            android:exported="false" />
+        <activity
             android:name=".learnSeasons"
             android:exported="false" />
         <activity
@@ -77,7 +83,6 @@
         <activity
             android:name=".Ball"
             android:exported="false" />
-
         <activity
             android:name=".MonthsLearning"
             android:exported="false" />
@@ -105,11 +110,9 @@
         <activity
             android:name=".clockMenuLearn"
             android:exported="false" />
-
-        <activity android:name=".clockMenu"
-        android:exported="false">
-        </activity>
-
+        <activity
+            android:name=".clockMenu"
+            android:exported="false" />
         <activity
             android:name=".Days"
             android:exported="false" />

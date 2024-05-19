@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/crushed"
         android:gravity="center"
-        android:text="Thanks for helping me with Penny. She is really hard to find."
+        android:text="@string/thanks_for_helping_me_with_penny_she_is_really_hard_to_find"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"

@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Locale;
+
 public class LearningMainMenu extends AppCompatActivity {
 
 
@@ -46,7 +48,12 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LearningMainMenu.this, learnSeasons.class);
+                Intent intent;
+                if (isAppLanguageTurkish()) {
+                    intent = new Intent(LearningMainMenu.this, learnSeasonsTr.class);
+                } else {
+                    intent = new Intent(LearningMainMenu.this, learnSeasons.class);
+                }
                 startActivity(intent);
 
             }
@@ -55,7 +62,12 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LearningMainMenu.this, MonthsLearning.class);
+                Intent intent;
+                if (isAppLanguageTurkish()) {
+                    intent = new Intent(LearningMainMenu.this, MonthsLearningTr.class);
+                } else {
+                    intent = new Intent(LearningMainMenu.this, MonthsLearning.class);
+                }
                 startActivity(intent);
 
             }
@@ -64,9 +76,13 @@ public class LearningMainMenu extends AppCompatActivity {
         cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LearningMainMenu.this, learnDays.class);
+                Intent intent;
+                if (isAppLanguageTurkish()) {
+                    intent = new Intent(LearningMainMenu.this, learnDaysTr.class);
+                } else {
+                    intent = new Intent(LearningMainMenu.this, learnDays.class);
+                }
                 startActivity(intent);
-
             }
         });
 
@@ -101,5 +117,10 @@ public class LearningMainMenu extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    private boolean isAppLanguageTurkish() {
+        Locale current = getResources().getConfiguration().locale;
+        return current.getLanguage().equals(new Locale("tr").getLanguage());
     }
 }

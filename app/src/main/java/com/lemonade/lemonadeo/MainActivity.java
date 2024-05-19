@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -22,7 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
-    ImageButton LogOut;
+    ImageView LogOut;
     TextView textview;
     FirebaseUser user;
     CardView cardView;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         auth=FirebaseAuth.getInstance();
-        LogOut=findViewById(R.id.logOutBtn);
+        LogOut=findViewById(R.id.imageView9);
         user=auth.getCurrentUser();
         textview=findViewById(R.id.lemonade);
         cardView=findViewById(R.id.learningCard);

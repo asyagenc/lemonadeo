@@ -46,21 +46,15 @@
             app:layout_constraintStart_toEndOf="@+id/lemonade"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/logOutBtn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginBottom="79dp"
-            android:backgroundTint="#FFDBFFF5"
-            android:scaleType="centerCrop"
-            app:layout_constraintBottom_toTopOf="@+id/lemonade"
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="26dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.923"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.293"
-            app:srcCompat="@drawable/artboard_6"
-            tools:ignore="MissingConstraints" />
+            app:srcCompat="@drawable/exit" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
